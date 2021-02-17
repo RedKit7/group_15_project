@@ -1,4 +1,4 @@
 package com.azulcrm.step_definitions;
 
-public class LoginStedDefs {
+public class LoginStepDefs {
 }
