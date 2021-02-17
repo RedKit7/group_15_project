@@ -9,4 +9,3 @@ Feature: User Should be able to Login
     Then Account summary page should be displayed
 
 
-  
