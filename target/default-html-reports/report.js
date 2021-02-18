@@ -29,9 +29,11 @@ formatter.step({
   "name": "page title should be \"Portal\"",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "user is navigates to Tasks page",
@@ -82,9 +84,11 @@ formatter.step({
   "name": "page title should be \"Portal\"",
   "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.scenario({
   "name": "user is navigates to Tasks page",
@@ -108,9 +112,11 @@ formatter.step({
   "name": "page title should be \"My Tasks\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
   "name": "the user navigates to \"Ongoing\" tab in My Tasks page",

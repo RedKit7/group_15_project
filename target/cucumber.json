@@ -20,21 +20,30 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 8988100,
+              "status": "skipped"
             },
             "line": 6,
             "name": "page title should be \"Portal\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-18T19:20:29.778Z",
+        "start_timestamp": "2021-02-18T19:58:50.554Z",
         "before": [
           {
             "result": {
-              "duration": 2011300,
+              "duration": 2001400,
               "status": "skipped"
             },
             "match": {
@@ -102,17 +111,26 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 977900,
+              "status": "skipped"
             },
             "line": 6,
             "name": "page title should be \"Portal\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
             "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-18T19:20:30.284Z",
+        "start_timestamp": "2021-02-18T19:58:50.974Z",
         "before": [
           {
             "result": {
@@ -130,7 +148,6 @@
         "after": [
           {
             "result": {
-              "duration": 996500,
               "status": "skipped"
             },
             "match": {
@@ -152,11 +169,20 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 997200,
+              "status": "skipped"
             },
             "line": 14,
             "name": "page title should be \"My Tasks\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Tasks\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
             "keyword": "When "
           },
           {
