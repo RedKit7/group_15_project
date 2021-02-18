@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Workgroups.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Tasks.feature");
 formatter.feature({
-  "name": "Workgroups function on Activity Stream",
+  "name": "user is on the Tasks page",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -18,15 +18,25 @@ formatter.before({
   "status": "skipped"
 });
 formatter.step({
-  "name": "the user is on \"Workgroups and projects\" page",
-  "keyword": "Given "
+  "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+  "keyword": "When "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
+formatter.step({
+  "name": "page title should be \"Portal\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "skipped"
+});
 formatter.scenario({
-  "name": "Join to the groups",
+  "name": "user is navigates to Tasks page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -36,7 +46,7 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on join button under the groups",
+  "name": "the user navigates to \"Tasks\" module",
   "keyword": "When "
 });
 formatter.match({});
@@ -44,7 +54,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "A message as \"Request has been sent\" should be displayed",
+  "name": "the user should be able to display tasks \"In Progress\" by clicking \"All Tasks\" tab",
   "keyword": "Then "
 });
 formatter.match({});
@@ -63,15 +73,25 @@ formatter.before({
   "status": "skipped"
 });
 formatter.step({
-  "name": "the user is on \"Workgroups and projects\" page",
-  "keyword": "Given "
+  "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+  "keyword": "When "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
 });
+formatter.step({
+  "name": "page title should be \"Portal\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "skipped"
+});
 formatter.scenario({
-  "name": "Adding groups to the favorites",
+  "name": "user is navigates to Tasks page",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -81,15 +101,25 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on the star next to the group name",
+  "name": "the user navigates to \"Tasks\" module",
+  "keyword": "Given "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "page title should be \"My Tasks\"",
   "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "clicks on search box",
+  "name": "the user navigates to \"Ongoing\" tab in My Tasks page",
   "keyword": "And "
 });
 formatter.match({});
@@ -97,15 +127,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.step({
-  "name": "clicks on favorites",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "The groups which are added to favorites should be displayed",
+  "name": "the user should be able to display tasks \"Ongoing Tasks\" by clicking \"Ongoing Tasks\" tab",
   "keyword": "Then "
 });
 formatter.match({});
