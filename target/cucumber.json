@@ -1,0 +1,185 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "the user is on \"Workgroups and projects\" page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T19:38:45.991Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000700,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Join to the groups",
+        "description": "",
+        "id": "workgroups-function-on-activity-stream;join-to-the-groups",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "the user clicks on join button under the groups",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "A message as \"Request has been sent\" should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "the user is on \"Workgroups and projects\" page",
+            "match": {},
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T19:38:46.488Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Adding groups to the favorites",
+        "description": "",
+        "id": "workgroups-function-on-activity-stream;adding-groups-to-the-favorites",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "the user clicks on the star next to the group name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "clicks on search box",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "clicks on favorites",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "The groups which are added to favorites should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Workgroups function on Activity Stream",
+    "description": "",
+    "id": "workgroups-function-on-activity-stream",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Workgroups.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
