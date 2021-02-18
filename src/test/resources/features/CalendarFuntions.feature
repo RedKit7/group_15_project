@@ -2,7 +2,7 @@
 Feature: Calendar Functions
 
   Scenario: user is able to display "My Calendar"
-    Given user is logged in
+    Given the user logs in using credentials "username" and "password"
     Then user navigates to "calendar" module
     And "My Calendar" page is displayed
     Then user views daily, weekly and monthly and overall schedules
