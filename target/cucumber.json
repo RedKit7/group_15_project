@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -13,37 +13,37 @@
             "result": {
               "status": "undefined"
             },
-            "line": 5,
+            "line": 4,
             "name": "the user logs in using following credentials  \"userName\"and \"password\"",
             "match": {},
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 8988100,
+              "duration": 989600,
               "status": "skipped"
             },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
+            "line": 5,
+            "name": "the user navigates to \"Workgroups\" module",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Portal\"",
-                  "offset": 21
+                  "val": "\"Workgroups\"",
+                  "offset": 22
                 }
               ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-18T19:58:50.554Z",
+        "start_timestamp": "2021-02-18T20:09:34.720Z",
         "before": [
           {
             "result": {
-              "duration": 2001400,
+              "duration": 1999900,
               "status": "skipped"
             },
             "match": {
@@ -51,10 +51,10 @@
             }
           }
         ],
-        "line": 8,
-        "name": "user is navigates to Tasks page",
+        "line": 7,
+        "name": "Join to the groups",
         "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "id": "workgroups-function-on-activity-stream;join-to-the-groups",
         "after": [
           {
             "result": {
@@ -72,8 +72,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 9,
-            "name": "the user navigates to \"Tasks\" module",
+            "line": 8,
+            "name": "the user clicks on join button under the groups",
             "match": {},
             "keyword": "When "
           },
@@ -81,8 +81,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 10,
-            "name": "the user should be able to display tasks \"In Progress\" by clicking \"All Tasks\" tab",
+            "line": 9,
+            "name": "A message as \"Request has been sent\" should be displayed",
             "match": {},
             "keyword": "Then "
           }
@@ -94,7 +94,7 @@
         ]
       },
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -104,33 +104,33 @@
             "result": {
               "status": "undefined"
             },
-            "line": 5,
+            "line": 4,
             "name": "the user logs in using following credentials  \"userName\"and \"password\"",
             "match": {},
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 977900,
+              "duration": 890400,
               "status": "skipped"
             },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
+            "line": 5,
+            "name": "the user navigates to \"Workgroups\" module",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Portal\"",
-                  "offset": 21
+                  "val": "\"Workgroups\"",
+                  "offset": 22
                 }
               ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
             },
-            "keyword": "Then "
+            "keyword": "When "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-18T19:58:50.974Z",
+        "start_timestamp": "2021-02-18T20:09:34.936Z",
         "before": [
           {
             "result": {
@@ -141,10 +141,10 @@
             }
           }
         ],
-        "line": 12,
-        "name": "user is navigates to Tasks page",
+        "line": 11,
+        "name": "Adding groups to the favorites",
         "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "id": "workgroups-function-on-activity-stream;adding-groups-to-the-favorites",
         "after": [
           {
             "result": {
@@ -162,35 +162,17 @@
             "result": {
               "status": "undefined"
             },
-            "line": 13,
-            "name": "the user navigates to \"Tasks\" module",
+            "line": 12,
+            "name": "the user clicks on the star next to the group name",
             "match": {},
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 997200,
-              "status": "skipped"
-            },
-            "line": 14,
-            "name": "page title should be \"My Tasks\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Tasks\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
             "keyword": "When "
           },
           {
             "result": {
               "status": "undefined"
             },
-            "line": 15,
-            "name": "the user navigates to \"Ongoing\" tab in My Tasks page",
+            "line": 13,
+            "name": "clicks on search box",
             "match": {},
             "keyword": "And "
           },
@@ -198,8 +180,17 @@
             "result": {
               "status": "undefined"
             },
-            "line": 16,
-            "name": "the user should be able to display tasks \"Ongoing Tasks\" by clicking \"Ongoing Tasks\" tab",
+            "line": 14,
+            "name": "clicks on favorites",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "The groups which are added to favorites should be displayed",
             "match": {},
             "keyword": "Then "
           }
@@ -211,11 +202,11 @@
         ]
       }
     ],
-    "name": "user is on the Tasks page",
+    "name": "Workgroups function on Activity Stream",
     "description": "",
-    "id": "user-is-on-the-tasks-page",
+    "id": "workgroups-function-on-activity-stream",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Tasks.feature",
+    "uri": "file:src/test/resources/features/Workgroups.feature",
     "tags": [
       {
         "name": "@wip",
