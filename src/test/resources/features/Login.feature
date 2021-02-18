@@ -8,7 +8,7 @@ Feature: User Should be able to Login
 
   Scenario Outline:Login with user credential wit
     When the user logs in using following credentials "<userName>" and "<password>"
-    Then the user reached to portal page
+    Then page title should be "Portal"
     Examples:
       | userName                          | password |
       | helpdesk1@cybertekschool.com  | UserUser |

@@ -1,4 +1,4 @@
-@wip
+
 Feature: Drive Functions in Activity Stream
 
   Background:
