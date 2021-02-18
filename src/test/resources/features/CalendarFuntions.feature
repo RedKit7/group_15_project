@@ -1,4 +1,4 @@
-@wip
+
 Feature: Calendar Functions
 
   Scenario: user is able to display "My Calendar"
