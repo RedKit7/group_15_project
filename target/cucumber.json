@@ -3,11 +3,47 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-18T19:16:29.321Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 989600,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user navigates to \"Workgroups\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Workgroups\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T20:09:34.720Z",
         "before": [
           {
             "result": {
-              "duration": 999600,
+              "duration": 1999900,
               "status": "skipped"
             },
             "match": {
@@ -15,14 +51,13 @@
             }
           }
         ],
-        "line": 6,
-        "name": "User enters valid info",
+        "line": 7,
+        "name": "Join to the groups",
         "description": "",
-        "id": "sdfsdf;user-enters-valid-info",
+        "id": "workgroups-function-on-activity-stream;join-to-the-groups",
         "after": [
           {
             "result": {
-              "duration": 993600,
               "status": "skipped"
             },
             "match": {
@@ -37,8 +72,8 @@
             "result": {
               "status": "undefined"
             },
-            "line": 7,
-            "name": "user logs in with valid username and password",
+            "line": 8,
+            "name": "the user clicks on join button under the groups",
             "match": {},
             "keyword": "When "
           },
@@ -46,8 +81,116 @@
             "result": {
               "status": "undefined"
             },
-            "line": 8,
-            "name": "Account summary page should be displayed",
+            "line": 9,
+            "name": "A message as \"Request has been sent\" should be displayed",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 890400,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "the user navigates to \"Workgroups\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Workgroups\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T20:09:34.936Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Adding groups to the favorites",
+        "description": "",
+        "id": "workgroups-function-on-activity-stream;adding-groups-to-the-favorites",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "the user clicks on the star next to the group name",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "clicks on search box",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "clicks on favorites",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "The groups which are added to favorites should be displayed",
             "match": {},
             "keyword": "Then "
           }
@@ -59,11 +202,20 @@
         ]
       }
     ],
-    "name": "sdfsdf",
+    "name": "Workgroups function on Activity Stream",
     "description": "",
-    "id": "sdfsdf",
+    "id": "workgroups-function-on-activity-stream",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/Workgroups.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
