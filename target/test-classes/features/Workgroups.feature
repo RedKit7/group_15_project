@@ -1,4 +1,4 @@
-@wip
+
 Feature: Workgroups function on Activity Stream
   Background:
     Given the user logs in using following credentials  "userName"and "password"
