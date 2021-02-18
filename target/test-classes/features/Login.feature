@@ -1,6 +1,8 @@
 
-Feature: User Should be able to Login
+  Feature: sdfsdf
 
-   Scenario :Login with user credential
-    When the user logs in using following credentials  "userName"and "password"
-    Then page title should be "Portal"
+
+    @wip
+    Scenario: User enters valid info
+      When user logs in with valid username and password
+      Then Account summary page should be displayed
