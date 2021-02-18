@@ -1,7 +1,7 @@
 
 Feature: Workgroups function on Activity Stream
   Background:
-    Given the user logs in using following credentials  "userName"and "password"
+    Given the user logs in using following credentials "userName" and "password"
     When the user navigates to "Workgroups" module
 
   Scenario: Join to the groups
