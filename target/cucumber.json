@@ -1,0 +1,230 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8988100,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T19:58:50.554Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2001400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "user is navigates to Tasks page",
+        "description": "",
+        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "the user navigates to \"Tasks\" module",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "the user should be able to display tasks \"In Progress\" by clicking \"All Tasks\" tab",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 977900,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T19:58:50.974Z",
+        "before": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "user is navigates to Tasks page",
+        "description": "",
+        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "the user navigates to \"Tasks\" module",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 997200,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "page title should be \"My Tasks\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Tasks\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "the user navigates to \"Ongoing\" tab in My Tasks page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "the user should be able to display tasks \"Ongoing Tasks\" by clicking \"Ongoing Tasks\" tab",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "user is on the Tasks page",
+    "description": "",
+    "id": "user-is-on-the-tasks-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Tasks.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
