@@ -1,12 +1,9 @@
 
 @wip
 Feature: User Should be able to Login
-
-   Scenario :Login with user credential
+ Scenario :Login with user credential
     When the user logs in using following credentials  "userName"and "password"
     Then page title should be "Portal"
-
-
   Scenario Outline:Login with user credential wit
     When the user logs in using following credentials  "<userName>" and "<password>"
     Examples:
@@ -15,7 +12,6 @@ Feature: User Should be able to Login
       | hr1@cybertekschool.com        | UserUser |
       | marketing1@cybertekschool.com | UserUser |
     Then the user reached to portal page
-
   Scenario Outline:Login with wrong user credential
     When the user should not be able to login with "<wuser>" and "<wpassword>"
     Examples:
