@@ -2,7 +2,7 @@
 Feature: user is on the Tasks page
 
   Background:
-    When the user logs in using following credentials "userName" and "password"
+    When the user logs in using following credentials  "userName"and "password"
     Then page title should be "Portal"
 
   Scenario: user is navigates to Tasks page
