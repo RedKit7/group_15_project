@@ -1,4 +1,4 @@
-@wip
+
 Feature: Workgroups function on Activity Stream
   Background:
     Given the user is on "Workgroups and projects" page

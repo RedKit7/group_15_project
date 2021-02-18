@@ -1,5 +1,4 @@
 
-@wip
 Feature: User Should be able to Login
 
    Scenario:Login with user credential
