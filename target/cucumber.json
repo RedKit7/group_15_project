@@ -1,0 +1,222 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2990800,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks on \"user menu\" in the Portal Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user menu\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.the_user_clicks_on_in_the_Portal_Page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T19:47:56.716Z",
+        "before": [
+          {
+            "result": {
+              "duration": 997900,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "User should be able to display \"Edit User Profile\" window by clicking on \"Edit Profile Settings\" menu",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-my-profile.;user-should-be-able-to-display-\"edit-user-profile\"-window-by-clicking-on-\"edit-profile-settings\"-menu",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10972100,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "the user clicks on \"Edit Profile Settings\" in the User Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Edit Profile Settings\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.the_user_clicks_on_in_the_User_Menu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "page title should be \"xxx\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MyProfile"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials  \"userName\"and \"password\"",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3987600,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks on \"user menu\" in the Portal Page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"user menu\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.the_user_clicks_on_in_the_Portal_Page(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-18T19:47:57.046Z",
+        "before": [
+          {
+            "result": {
+              "duration": 995100,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "User should be able to display \"Contact Information\" by clicking on \"My Profile\" menu.",
+        "description": "",
+        "id": "as-a-user--i-should-be-able-to-see-my-profile.;user-should-be-able-to-display-\"contact-information\"-by-clicking-on-\"my-profile\"-menu.",
+        "after": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6972700,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "the user clicks on \"My Profile\" in the User Menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Profile\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.the_user_clicks_on_in_the_User_Menu(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "page title should be \"yyy\"",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@MyProfile"
+          }
+        ]
+      }
+    ],
+    "name": "As a user, I should be able to see My Profile.",
+    "description": "",
+    "id": "as-a-user--i-should-be-able-to-see-my-profile.",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/MyProfile.feature",
+    "tags": [
+      {
+        "name": "@MyProfile",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
