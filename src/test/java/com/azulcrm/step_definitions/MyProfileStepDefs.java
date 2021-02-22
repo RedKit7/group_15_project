@@ -1,15 +1,18 @@
 package com.azulcrm.step_definitions;
 
+import com.azulcrm.utilities.BrowserUtils;
+import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class MyProfileStepDefs {
 
 
     @Then("page title should be {string}")
     public void page_title_should_be(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(Driver.get().getTitle().contains(string));
+        System.out.println("Page Title is: " + string);
     }
 
     @Then("the user clicks on {string} in the Portal Page")

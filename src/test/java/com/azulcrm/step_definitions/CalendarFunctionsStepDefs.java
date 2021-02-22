@@ -1,14 +1,26 @@
 package com.azulcrm.step_definitions;
 
+import com.azulcrm.pages.MyCalendarPage;
+import com.azulcrm.utilities.BrowserUtils;
+import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class CalendarFunctionsStepDefs {
     @Then("user views daily, weekly and monthly and overall schedules")
     public void user_views_daily_weekly_and_monthly_and_overall_schedules() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        if(!Driver.get().getTitle().contains("Event")){
+           MyCalendarPage myCalendarPage = new MyCalendarPage();
+           BrowserUtils.waitForClickablility(myCalendarPage.dailyCalendar, 5);
+           myCalendarPage.dailyCalendar.click();
+            BrowserUtils.waitForVisibility(myCalendarPage.dailyCalendar, 5);
+           Assert.assertTrue(new MyCalendarPage().dailyCalendarWeekDay.isDisplayed());
+        }else{
+            System.out.println("Work in progress!");
+        }
+
     }
 
     @When("user navigates to {string} tab in My Calendar page")

@@ -1,6 +1,7 @@
 package com.azulcrm.step_definitions;
 
 
+import com.azulcrm.pages.PortalPage;
 import io.cucumber.java.en.*;
 
 //Belongs to Said
@@ -8,8 +9,7 @@ public class TasksStepDefs {
 
     @When("the user navigates to {string} module")
     public void the_user_navigates_to_module(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        new PortalPage().navigateToModule(string);
     }
 
     @Then("the user should be able to display tasks {string} by clicking {string} tab")
