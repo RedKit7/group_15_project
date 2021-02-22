@@ -32,29 +32,5 @@ public class MyTasksPage extends BasePage{
     @FindBy(xpath = "//div[text()=\"Role: Ongoing\"]")
     public WebElement onGoingmessage;
 
-    public static void main(String[] args) {
-
-        Driver.get().get(ConfigurationReader.get("url"));
-
-        MyTasksPage myTasksPage = new MyTasksPage();
-
-        String username = ConfigurationReader.get("marketing_username");
-        String password = ConfigurationReader.get("marketing_password");
-
-        new MyTasksPage().usernameInput.sendKeys(username, Keys.TAB, password, Keys.TAB, Keys.TAB ,Keys.ENTER);
-
-
-        myTasksPage.tasksModule.click();
-
-        myTasksPage.allTasksTab.click();
-
-        System.out.println("myTasksPage.inProgress.getText() = " + myTasksPage.inProgress.getText());
-
-        myTasksPage.onGoing.click();
-
-        System.out.println("myTasksPage.onGoingmessage.getText() = " + myTasksPage.onGoingmessage.getText());
-
-
-    }
 
 }
