@@ -9,11 +9,9 @@ import org.junit.Assert;
 public class TasksStepDefs {
 
     @When("the user navigates to {string} module")
-    public void the_user_navigates_to_module(String string) {
+    public void the_user_navigates_to_module(String module) {
 
-        if (string.equalsIgnoreCase("Tasks")){
-            new MyTasksPage().tasksModule.click();
-        }
+        new MyTasksPage().navigateToModule(module);
 
     }
 
