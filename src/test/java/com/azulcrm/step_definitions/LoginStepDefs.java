@@ -47,7 +47,7 @@ public class LoginStepDefs {
 
         LoginPage loginPage =new LoginPage();
         loginPage.login(userNameEnt, passwordEnt);
-        Assert.assertEquals("(6)Portal", Driver.get().getTitle());
+        Assert.assertEquals("Portal", Driver.get().getTitle());
     }
 
     @When("the user should not be able to login with {string} and {string}")
@@ -57,7 +57,7 @@ public class LoginStepDefs {
 
         LoginPage loginPage =new LoginPage();
         loginPage.login(userNameEnt, passwordEnt);
-        Assert.assertNotEquals("(6)Portal", Driver.get().getTitle());
+        Assert.assertNotEquals("Portal", Driver.get().getTitle());
     }
 
     @Then("The user should receive a warning message")
