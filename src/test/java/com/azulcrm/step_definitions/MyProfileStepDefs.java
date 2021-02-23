@@ -1,34 +1,19 @@
 package com.azulcrm.step_definitions;
 
 import com.azulcrm.pages.MyProfilePage;
-<<<<<<< HEAD
-import com.azulcrm.utilities.BrowserUtils;
-=======
->>>>>>> master
 import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-<<<<<<< HEAD
-=======
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
->>>>>>> master
 
 public class MyProfileStepDefs {
 
 
     @Then("page title should be {string}")
-<<<<<<< HEAD
-    public void page_title_should_be(String expectedTitle) {
-        String actualTitle = Driver.get().getTitle();
-
-        Assert.assertEquals(expectedTitle,actualTitle);
-
-=======
     public void page_title_should_be(String string) {
         Assert.assertTrue(Driver.get().getTitle().contains(string));
->>>>>>> master
     }
 
     @Then("the user clicks on {string} in the Portal Page")
