@@ -1,8 +1,9 @@
 
 Feature: User Should be able to Login
-
+#Zeynep
+  @wip
    Scenario:Login with user credential
-    When the user logs in using following credentials "userName" and "password"
+    When the user logs in using following credentials "helpdesk_username" and "password"
     Then page title should be "Portal"
 
 
@@ -10,7 +11,7 @@ Feature: User Should be able to Login
     When the user logs in using following credentials "<userName>" and "<password>"
     Then page title should be "Portal"
     Examples:
-      | userName                          | password |
+      | userName                      | password |
       | helpdesk1@cybertekschool.com  | UserUser |
       | hr1@cybertekschool.com        | UserUser |
       | marketing1@cybertekschool.com | UserUser |
@@ -29,4 +30,6 @@ Feature: User Should be able to Login
       | null                         | UserUser  |
       | asfdasda                     | null      |
       | null                         | asfdasda  |
+
+
 
