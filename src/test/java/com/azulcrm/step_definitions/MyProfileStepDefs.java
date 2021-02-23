@@ -1,6 +1,7 @@
 package com.azulcrm.step_definitions;
 
 import com.azulcrm.pages.EditProfilePage;
+import com.azulcrm.pages.MyProfilePage;
 import com.azulcrm.pages.PortalPage;
 import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.Then;
@@ -37,7 +38,7 @@ public class MyProfileStepDefs {
 
     @When("the Contact Information should be displayed")
     public void the_Contact_Information_should_be_displayed() {
-       Assert.assertTrue(new EditProfilePage().contactInfo.getText().contains("Contact"));
+       Assert.assertTrue(new MyProfilePage().contactInfo.getText().contains("Contact"));
     }
 
 

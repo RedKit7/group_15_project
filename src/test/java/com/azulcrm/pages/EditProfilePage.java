@@ -10,14 +10,6 @@ public class EditProfilePage extends BasePage{
     public EditProfilePage(){
         PageFactory.initElements(Driver.get(), this);
     }
-
-    @FindBy(xpath = "//td[text()='Contact information']")
-    public WebElement contactInfo;
-
-
-
-
-
-
+    // for now, no locator or method is needed here!!!
 
 }
