@@ -9,14 +9,11 @@ public class LoginPage extends BasePage{
 
     //first code
 
-    @FindBy(xpath="//input[@placeholder=\"Login\"]")
-    public List<WebElement> userNameEntrance;
+    @FindBy(xpath = "//input[@type=\"text\"]")
+    public WebElement usernameInput;
 
-    @FindBy(xpath="//input[@placeholder=\"Password\"]")
-    public List<WebElement> passwordEntrance;
-
-    @FindBy(xpath="//div[@class=\"errortext\"]")
-    public List<WebElement> loginError;
+    @FindBy(xpath = "//input[@type=\"password\"]")
+    public WebElement passwordInput;
 
 
 
