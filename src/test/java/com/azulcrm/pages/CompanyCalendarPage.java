@@ -29,7 +29,12 @@ public class CompanyCalendarPage extends BasePage{
     @FindBy (xpath = "//span[@class='calendar-day-of-week-day']")
     public WebElement dailyCalendarWeekDay;
 
-    @FindBy (xpath = "(//div[@class='calendar-grid-week-row-days-week'])[2]")
-    public WebElement weeklyCalendarDaysRow;
+
+
+
+
+
+
+
 
 }

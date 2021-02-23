@@ -4,6 +4,7 @@ import com.azulcrm.pages.LoginPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 public class LoginStepDefs {
 
@@ -20,14 +21,12 @@ public class LoginStepDefs {
 
     @When("the user should not be able to login with {string} and {string}")
     public void the_user_should_not_be_able_to_login_with_and(String string, String string2) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        new LoginPage().falseLogin(string, string2);
     }
 
     @Then("The user should receive a warning message")
     public void the_user_should_receive_a_warning_message() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Assert.assertTrue(new LoginPage().loginError.getText().equals("Incorrect login or password"));
     }
 
 

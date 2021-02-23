@@ -1,5 +1,6 @@
 package com.azulcrm.step_definitions;
 
+import com.azulcrm.pages.CompanyCalendarPage;
 import com.azulcrm.pages.MyCalendarPage;
 import com.azulcrm.utilities.BrowserUtils;
 import com.azulcrm.utilities.Driver;
@@ -15,18 +16,28 @@ public class CalendarFunctionsStepDefs {
            MyCalendarPage myCalendarPage = new MyCalendarPage();
            BrowserUtils.waitForClickablility(myCalendarPage.dailyCalendar, 5);
            myCalendarPage.dailyCalendar.click();
-            BrowserUtils.waitForVisibility(myCalendarPage.dailyCalendar, 5);
-           Assert.assertTrue(new MyCalendarPage().dailyCalendarWeekDay.isDisplayed());
-        }else{
-            System.out.println("Work in progress!");
+           BrowserUtils.waitForVisibility(myCalendarPage.dailyCalendar, 5);
+           Assert.assertTrue(new MyCalendarPage().calendarDayView.isDisplayed());
+           BrowserUtils.waitForClickablility(myCalendarPage.weeklyCalendar, 5);
+            myCalendarPage.weeklyCalendar.click();
+            Assert.assertTrue(new MyCalendarPage().calendarWeekView.isDisplayed());
+            BrowserUtils.waitForClickablility(myCalendarPage.monthlyCalendar, 5);
+            myCalendarPage.monthlyCalendar.click();
+            Assert.assertTrue(new MyCalendarPage().calendarMonthView.isDisplayed());
+            BrowserUtils.waitForClickablility(myCalendarPage.schedule, 5);
+            myCalendarPage.schedule.click();
+            Assert.assertTrue(new MyCalendarPage().calendarScheduleView.isDisplayed());
+        }else if(Driver.get().getTitle().contains("Event")){
+            CompanyCalendarPage companyCalendarPage = new CompanyCalendarPage();
+            Assert.assertTrue(companyCalendarPage.pageSubTitle.getText().contains("Event Calendar"));
         }
 
     }
 
     @When("user navigates to {string} tab in My Calendar page")
     public void user_navigates_to_tab_in_My_Calendar_page(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        BrowserUtils.waitForClickablility(new MyCalendarPage().companyCalendarLink, 5);
+        new MyCalendarPage().companyCalendarLink.click();
     }
 
     @When("user search {string}")

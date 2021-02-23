@@ -45,6 +45,13 @@ public class LoginPage extends BasePage{
         BrowserUtils.waitFor(1);
     }
 
+    public void falseLogin(String username, String password){
+        userNameEntrance.sendKeys(username);
+        passwordEntrance.sendKeys(password);
+        loginButton.click();
+        BrowserUtils.waitFor(1);
+    }
+
 
 
 }

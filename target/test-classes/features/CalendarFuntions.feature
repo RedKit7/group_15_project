@@ -1,24 +1,21 @@
-@wip
+
 Feature: Calendar Functions
 
   Background:
-    Given the user logs in using following credentials "<userName>" and "<password>"
+    Given the user logs in using following credentials "userName" and "password"
     When the user navigates to "Calendar" module
-    And page title should be "My Calendar"
+    Then page title should be "Calendar"
 
   Scenario: user is able to display "My Calendar"
     Then user views daily, weekly and monthly and overall schedules
 
   Scenario: user is able to display Company Calendar
-    And user navigates to "Company Calendar" tab in My Calendar page
+    Then user navigates to "Company Calendar" tab in My Calendar page
     And page title should be "Company Calendar"
     Then user views daily, weekly and monthly and overall schedules
 
 
   Scenario Outline: user uses calendar search options
-    Given the user logs in using following credentials "<userName>" and "<password>"
-    When the user navigates to "Calendar" module
-    And page title should be "My Calendar"
     And user search "<search options>"
     Examples:
       | search options |

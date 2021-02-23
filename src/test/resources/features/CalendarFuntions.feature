@@ -5,7 +5,7 @@ Feature: Calendar Functions
     Given the user logs in using following credentials "userName" and "password"
     When the user navigates to "Calendar" module
     Then page title should be "Calendar"
-  @wip
+
   Scenario: user is able to display "My Calendar"
     Then user views daily, weekly and monthly and overall schedules
 
