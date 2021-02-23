@@ -12,9 +12,8 @@ public class MyProfileStepDefs {
 
     @Then("page title should be {string}")
     public void page_title_should_be(String expectedTitle) {
-        String actualTitle = Driver.get().getTitle();
 
-        Assert.assertEquals(expectedTitle,actualTitle);
+        Assert.assertTrue(Driver.get().getTitle().contains(expectedTitle));
 
     }
 

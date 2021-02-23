@@ -29,15 +29,12 @@ public class DriveFunctionsStepDefs {
             }
     }
 
-
-
-    @Then("as the title {string} should be displayed")
+@Then("as the title {string} should be displayed")
     public void asTheTitleShouldBeDisplayed(String str) {
 
             Assert.assertEquals(str,Driver.get().getTitle());
     }
 
-
-    }
+}
 
 

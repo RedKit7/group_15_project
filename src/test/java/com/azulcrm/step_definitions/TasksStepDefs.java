@@ -2,6 +2,7 @@ package com.azulcrm.step_definitions;
 
 
 import com.azulcrm.pages.MyTasksPage;
+import com.azulcrm.pages.PortalPage;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
 
@@ -11,9 +12,7 @@ public class TasksStepDefs {
     @When("the user navigates to {string} module")
     public void the_user_navigates_to_module(String string) {
 
-        if (string.equalsIgnoreCase("Tasks")){
-            new MyTasksPage().tasksModule.click();
-        }
+        new PortalPage().navigateToModule(string);
 
     }
 
