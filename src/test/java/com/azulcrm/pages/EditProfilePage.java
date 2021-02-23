@@ -11,7 +11,7 @@ public class EditProfilePage extends BasePage{
         PageFactory.initElements(Driver.get(), this);
     }
 
-    @FindBy(linkText = "Contact information")
+    @FindBy(xpath = "//td[text()='Contact information']")
     public WebElement contactInfo;
 
 

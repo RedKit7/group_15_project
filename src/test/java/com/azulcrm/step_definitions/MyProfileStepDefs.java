@@ -7,6 +7,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MyProfileStepDefs {
 
@@ -21,13 +27,19 @@ public class MyProfileStepDefs {
         Driver.get().findElement(By.id(string)).click();
     }
 
-    @When("the Contact Information should be displayed")
-    public void the_Contact_Information_should_be_displayed(String string) {
-       Assert.assertTrue(new EditProfilePage().contactInfo.isDisplayed());
-    }
-
 
     @When("the user clicks on {string} in the User Menu")
-    public void theUserClicksOnInTheUserMenu(String arg0) {
+    public void theUserClicksOnInTheUserMenu(String userMenuItem) {
+        String locator = "//span[text()='"+userMenuItem+"']";
+        Driver.get().findElement(By.xpath(locator)).click();
     }
+
+
+    @When("the Contact Information should be displayed")
+    public void the_Contact_Information_should_be_displayed() {
+       Assert.assertTrue(new EditProfilePage().contactInfo.getText().contains("Contact"));
+    }
+
+
+
 }

@@ -9,7 +9,7 @@ Feature: As a user, I should be able to see My Profile.
     When the user clicks on "Edit Profile Settings" in the User Menu
     Then page title should be "Edit User Profile"
 
-
+@wip
   Scenario: User should be able to display "Contact Information" by clicking on "My Profile" menu.
     When the user clicks on "My Profile" in the User Menu
     Then the Contact Information should be displayed
