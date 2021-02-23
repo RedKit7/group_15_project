@@ -2,7 +2,7 @@
 Feature: Drive Functions in Activity Stream
 
   Background:
-    When the user logs in using following credentials "userName" and "password"
+    When the user logs in using following credentials "marketing_username" and "marketing_password"
     Then page title should be "Portal"
 
 
