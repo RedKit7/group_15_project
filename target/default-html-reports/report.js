@@ -1,6 +1,6 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/CalendarFuntions.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DriveFuntions.feature");
 formatter.feature({
-  "name": "Calendar Functions",
+  "name": "Drive Functions in Activity Stream",
   "description": "",
   "keyword": "Feature",
   "tags": [
@@ -15,99 +15,31 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
+  "name": "the user logs in using following credentials \"userName\" and \"password\"",
+  "keyword": "When "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "user is able to display \"My Calendar\"",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "user views daily, weekly and monthly and overall schedules",
+  "name": "page title should be \"Portal\"",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
 formatter.match({
   "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(MyProfileStepDefs.java:12)\r\n\tat ✽.page title should be \"Portal\"(file:///C:/Users/dunda/Desktop/Cybertek-SDET/Project/group_15_project_AzulCRM/src/test/resources/features/DriveFuntions.feature:6)\r\n",
+  "status": "pending"
 });
 formatter.scenario({
-  "name": "user is able to display Company Calendar",
+  "name": "User displays the windows in the Drive Function",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -117,81 +49,47 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user navigates to \"Company Calendar\" tab in My Calendar page",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.step({
-  "name": "page title should be \"Company Calendar\"",
+  "name": "the user navigates to \"Drive\" module",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
 });
 formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "user views daily, weekly and monthly and overall schedules",
+  "name": "page title should be \"My Drive\"",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
 });
-formatter.after({
+formatter.result({
   "status": "skipped"
 });
-formatter.scenarioOutline({
-  "name": "user uses calendar search options",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
 formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
+  "name": "\"My Drive\" window should be displayed",
   "keyword": "Given "
 });
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "skipped"
 });
 formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
+  "name": "as the title \"My Drive\" should be displayed",
+  "keyword": "Then "
 });
-formatter.step({
-  "name": "user search \"\u003csearch options\u003e\"",
-  "keyword": "And "
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
 });
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "search options"
-      ]
-    },
-    {
-      "cells": [
-        "invitations"
-      ]
-    },
-    {
-      "cells": [
-        "organiser"
-      ]
-    },
-    {
-      "cells": [
-        "participant"
-      ]
-    }
-  ]
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "status": "passed"
 });
 formatter.background({
   "name": "",
@@ -199,307 +97,31 @@ formatter.background({
   "keyword": "Background"
 });
 formatter.before({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
+  "name": "the user logs in using following credentials \"userName\" and \"password\"",
+  "keyword": "When "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
+  "name": "page title should be \"Portal\"",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
 });
 formatter.result({
-  "status": "skipped"
+  "error_message": "io.cucumber.java.PendingException: TODO: implement me\r\n\tat com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(MyProfileStepDefs.java:12)\r\n\tat ✽.page title should be \"Portal\"(file:///C:/Users/dunda/Desktop/Cybertek-SDET/Project/group_15_project_AzulCRM/src/test/resources/features/DriveFuntions.feature:6)\r\n",
+  "status": "pending"
 });
 formatter.scenario({
-  "name": "user uses calendar search options",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user search \"invitations\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
   "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "user uses calendar search options",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user search \"organiser\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "user uses calendar search options",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "user search \"participant\"",
-  "keyword": "And "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user logs in using following credentials \"\u003cuserName\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "the user navigates to \"Calendar\" module",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "page title should be \"My Calendar\"",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "user can add new event to My Calendar",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -509,34 +131,26 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "user adds new event to My Calendar with following info:",
-  "rows": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
-  ],
-  "keyword": "And "
+  "name": "\"Company Drive\" window should be displayed",
+  "keyword": "When "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "\"Spring Planning\" is displayed on My Calendar page",
-  "keyword": "And "
+  "name": "as the title \"Company Drive\" should be displayed",
+  "keyword": "Then "
 });
-formatter.match({});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
+});
 formatter.result({
-  "status": "undefined"
+  "status": "skipped"
 });
 formatter.after({
-  "status": "skipped"
+  "status": "passed"
 });
 });
