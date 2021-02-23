@@ -1,4 +1,4 @@
-@wip
+
 Feature: Calendar Functions
 
   Background:
