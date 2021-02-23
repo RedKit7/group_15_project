@@ -1,10 +1,12 @@
 package com.azulcrm.step_definitions;
 
-import com.azulcrm.utilities.BrowserUtils;
+import com.azulcrm.pages.MyProfilePage;
 import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 public class MyProfileStepDefs {
 
@@ -12,21 +14,25 @@ public class MyProfileStepDefs {
     @Then("page title should be {string}")
     public void page_title_should_be(String string) {
         Assert.assertTrue(Driver.get().getTitle().contains(string));
-        System.out.println("Page Title is: " + string);
     }
 
     @Then("the user clicks on {string} in the Portal Page")
     public void the_user_clicks_on_in_the_Portal_Page(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        Driver.get().findElement(By.id(string)).click();
     }
+
 
     @When("the user clicks on {string} in the User Menu")
-    public void the_user_clicks_on_in_the_User_Menu(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void theUserClicksOnInTheUserMenu(String userMenuItem) {
+        String locator = "//span[text()='"+userMenuItem+"']";
+        Driver.get().findElement(By.xpath(locator)).click();
     }
 
+
+    @When("the Contact Information should be displayed")
+    public void the_Contact_Information_should_be_displayed() {
+       Assert.assertTrue(new MyProfilePage().contactInfo.getText().contains("Contact"));
+    }
 
 
 
