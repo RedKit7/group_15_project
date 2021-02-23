@@ -29,12 +29,6 @@ public class MyCalendarPage extends BasePage{
     @FindBy (xpath = "//h2[@class='calendar-top-title']")
     public WebElement calendarTitle;
 
-    @FindBy (xpath = "//span[@class='calendar-day-of-week-day']")
-    public WebElement dailyCalendarWeekDay;
-
-    @FindBy (xpath = "//div[@class='calendar-grid-week-row-days-week']")
-    public WebElement weeklyCalendarDaysRow;
-
     @FindBy (xpath = "//input[@id='calendar_slider_696528_entry_name']")
     public WebElement newEventName;
 
