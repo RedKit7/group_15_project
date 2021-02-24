@@ -1,62 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8969465100,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 137836700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Portal\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T19:01:08.095Z",
+        "start_timestamp": "2021-02-24T18:19:55.023Z",
         "before": [
           {
             "result": {
-              "duration": 20887633000,
+              "duration": 16795442500,
               "status": "passed"
             },
             "match": {
@@ -64,14 +15,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "user is navigates to Tasks page",
+        "line": 3,
+        "name": "user logs out from portal",
         "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "id": "user-logs-out;user-logs-out-from-portal",
         "after": [
           {
             "result": {
-              "duration": 2681010900,
+              "duration": 9769255700,
               "status": "passed"
             },
             "match": {
@@ -84,229 +35,51 @@
         "steps": [
           {
             "result": {
-              "duration": 3284284700,
+              "duration": 14809584000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user navigates to \"Tasks\" module",
+            "line": 4,
+            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Tasks\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 508687900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "the user should be able to display tasks \"In progress\" by clicking \"All Tasks\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"In progress\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"All Tasks\"",
-                  "offset": 67
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@tasks"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12577855900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
+                  "val": "\"human_resource_username\"",
                   "offset": 45
                 },
                 {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
+                  "val": "\"password\"",
+                  "offset": 75
                 }
               ],
               "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 124569300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Portal\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T19:01:44.967Z",
-        "before": [
-          {
-            "result": {
-              "duration": 11275840900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "user is navigates to Tasks page",
-        "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
-        "after": [
-          {
-            "result": {
-              "duration": 4869475200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4675742800,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "the user navigates to \"Tasks\" module",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Tasks\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 85278600,
+              "duration": 2725803800,
               "status": "passed"
             },
-            "line": 14,
-            "name": "page title should be \"My tasks\"",
+            "line": 5,
+            "name": "user logs out from portal",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"My tasks\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 495695900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "the user navigates to \"Ongoing\" tab in My Tasks page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Ongoing\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_tab_in_My_Tasks_page(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2001900,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the user should be able to display tasks \"Role: Ongoing\" by clicking \"Ongoing Tasks\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Role: Ongoing\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"Ongoing Tasks\"",
-                  "offset": 69
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LogoutStepDefs.user_logs_out_from_portal()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tasks"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "user is on the Tasks page",
+    "name": "User Logs Out",
     "description": "",
-    "id": "user-is-on-the-tasks-page",
+    "id": "user-logs-out",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Tasks.feature",
-    "tags": [
-      {
-        "name": "@tasks",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/Logout.feature",
+    "tags": []
   }
 ]

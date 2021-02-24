@@ -12,11 +12,6 @@ public class LoginStepDefs {
 //Zeynep
     @When("the user logs in using following credentials {string} and {string}")
     public void the_user_logs_in_using_following_credentials_and(String username, String password) {
-        //String userNameEnt = ConfigurationReader.get("helpdesk_username");
-        //String passwordEnt = ConfigurationReader.get("helpdesk_password");
-       // String userNameEnt = "<userName>";
-       // String passwordEnt = "<password>";
-
         LoginPage loginPage =new LoginPage();
         switch (username){
             case "helpdesk_username":
