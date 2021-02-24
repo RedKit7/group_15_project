@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8969465100,
+              "duration": 4127295700,
               "status": "passed"
             },
             "line": 5,
@@ -33,7 +33,7 @@
           },
           {
             "result": {
-              "duration": 137836700,
+              "duration": 7979600,
               "status": "passed"
             },
             "line": 6,
@@ -48,15 +48,51 @@
               "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 901832700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user navigates to \"Drive\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Drive\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2991300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "page title should be \"My Drive\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Drive\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-23T19:01:08.095Z",
+        "start_timestamp": "2021-02-23T19:39:06.120Z",
         "before": [
           {
             "result": {
-              "duration": 20887633000,
+              "duration": 4879563500,
               "status": "passed"
             },
             "match": {
@@ -64,14 +100,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "user is navigates to Tasks page",
+        "line": 10,
+        "name": "User displays the windows in the My Drive Function",
         "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "id": "drive-functions-in-activity-stream;user-displays-the-windows-in-the-my-drive-function",
         "after": [
           {
             "result": {
-              "duration": 2681010900,
+              "duration": 791644800,
               "status": "passed"
             },
             "match": {
@@ -84,48 +120,44 @@
         "steps": [
           {
             "result": {
-              "duration": 3284284700,
+              "duration": 677564600,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user navigates to \"Tasks\" module",
+            "line": 11,
+            "name": "\"My Drive\" window should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Tasks\"",
-                  "offset": 22
+                  "val": "\"My Drive\"",
+                  "offset": 0
                 }
               ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 508687900,
+              "duration": 4973300,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the user should be able to display tasks \"In progress\" by clicking \"All Tasks\" tab",
+            "line": 12,
+            "name": "as the title \"My Drive\" should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"In progress\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"All Tasks\"",
-                  "offset": 67
+                  "val": "\"My Drive\"",
+                  "offset": 13
                 }
               ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tasks"
+            "name": "@wip"
           }
         ]
       },
@@ -138,7 +170,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12577855900,
+              "duration": 3560414000,
               "status": "passed"
             },
             "line": 5,
@@ -160,7 +192,7 @@
           },
           {
             "result": {
-              "duration": 124569300,
+              "duration": 2991600,
               "status": "passed"
             },
             "line": 6,
@@ -175,15 +207,51 @@
               "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 771670000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user navigates to \"Drive\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Drive\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4991100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "page title should be \"My Drive\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Drive\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-23T19:01:44.967Z",
+        "start_timestamp": "2021-02-23T19:39:17.569Z",
         "before": [
           {
             "result": {
-              "duration": 11275840900,
+              "duration": 4293917800,
               "status": "passed"
             },
             "match": {
@@ -191,14 +259,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "user is navigates to Tasks page",
+        "line": 15,
+        "name": "User displays the windows in the Company Drive Function",
         "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "id": "drive-functions-in-activity-stream;user-displays-the-windows-in-the-company-drive-function",
         "after": [
           {
             "result": {
-              "duration": 4869475200,
+              "duration": 795141700,
               "status": "passed"
             },
             "match": {
@@ -211,96 +279,56 @@
         "steps": [
           {
             "result": {
-              "duration": 4675742800,
+              "duration": 751615500,
               "status": "passed"
             },
-            "line": 13,
-            "name": "the user navigates to \"Tasks\" module",
+            "line": 16,
+            "name": "\"Company Drive\" window should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Tasks\"",
-                  "offset": 22
+                  "val": "\"Company Drive\"",
+                  "offset": 0
                 }
               ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 85278600,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "page title should be \"My tasks\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My tasks\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 495695900,
+              "duration": 4986700,
               "status": "passed"
             },
-            "line": 15,
-            "name": "the user navigates to \"Ongoing\" tab in My Tasks page",
+            "line": 17,
+            "name": "as the title \"Company drive\" should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Ongoing\"",
-                  "offset": 22
+                  "val": "\"Company drive\"",
+                  "offset": 13
                 }
               ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_tab_in_My_Tasks_page(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2001900,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the user should be able to display tasks \"Role: Ongoing\" by clicking \"Ongoing Tasks\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Role: Ongoing\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"Ongoing Tasks\"",
-                  "offset": 69
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tasks"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "user is on the Tasks page",
+    "name": "Drive Functions in Activity Stream",
     "description": "",
-    "id": "user-is-on-the-tasks-page",
+    "id": "drive-functions-in-activity-stream",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Tasks.feature",
+    "uri": "file:src/test/resources/features/DriveFuntions.feature",
     "tags": [
       {
-        "name": "@tasks",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,

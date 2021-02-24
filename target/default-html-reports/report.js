@@ -1,11 +1,11 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Tasks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DriveFuntions.feature");
 formatter.feature({
-  "name": "user is on the Tasks page",
+  "name": "Drive Functions in Activity Stream",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@tasks"
+      "name": "@wip"
     }
   ]
 });
@@ -37,19 +37,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "user is navigates to Tasks page",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@tasks"
-    }
-  ]
-});
 formatter.step({
-  "name": "the user navigates to \"Tasks\" module",
-  "keyword": "When "
+  "name": "the user navigates to \"Drive\" module",
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
@@ -58,11 +48,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able to display tasks \"In progress\" by clicking \"All Tasks\" tab",
+  "name": "page title should be \"My Drive\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User displays the windows in the My Drive Function",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "\"My Drive\" window should be displayed",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "as the title \"My Drive\" should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -98,19 +118,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "user is navigates to Tasks page",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@tasks"
-    }
-  ]
-});
 formatter.step({
-  "name": "the user navigates to \"Tasks\" module",
-  "keyword": "Given "
+  "name": "the user navigates to \"Drive\" module",
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
@@ -119,8 +129,8 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "page title should be \"My tasks\"",
-  "keyword": "When "
+  "name": "page title should be \"My Drive\"",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
@@ -128,22 +138,32 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "User displays the windows in the Company Drive Function",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
 formatter.step({
-  "name": "the user navigates to \"Ongoing\" tab in My Tasks page",
-  "keyword": "And "
+  "name": "\"Company Drive\" window should be displayed",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_tab_in_My_Tasks_page(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user should be able to display tasks \"Role: Ongoing\" by clicking \"Ongoing Tasks\" tab",
+  "name": "as the title \"Company drive\" should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

@@ -1,7 +1,7 @@
 
 Feature: User Should be able to Login
 #Zeynep
-  @wip
+
    Scenario:Login with user credential
     When the user logs in using following credentials "helpdesk_username" and "password"
     Then page title should be "Portal"
