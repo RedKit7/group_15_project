@@ -8,7 +8,7 @@ Feature: Calendar Functions
 
   Scenario: user is able to display "My Calendar"
     Then user views daily, weekly and monthly and overall schedules
-  @wip
+
   Scenario: user is able to display Company Calendar
     Then user navigates to "Company Calendar" tab in My Calendar page
     And page title should be "Event Calendar"

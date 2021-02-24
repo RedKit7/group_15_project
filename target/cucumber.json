@@ -1,20 +1,43 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "",
+        "start_timestamp": "2021-02-24T14:21:50.926Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8201930100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "user logs out from portal",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "user-logs-out;user-logs-out-from-portal",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5678979900,
+              "duration": 5585325300,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
             "match": {
               "arguments": [
@@ -33,118 +56,13 @@
           },
           {
             "result": {
-              "duration": 2125325000,
+              "duration": 1489470100,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user navigates to \"Calendar\" module",
+            "line": 5,
+            "name": "user logs out from portal",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Calendar\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 16443200,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "page title should be \"Calendar\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Calendar\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-24T13:10:01.571Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6139688200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 12,
-        "name": "user is able to display Company Calendar",
-        "description": "",
-        "id": "calendar-functions;user-is-able-to-display-company-calendar",
-        "after": [
-          {
-            "result": {
-              "duration": 1000200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1244442500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user navigates to \"Company Calendar\" tab in My Calendar page",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Company Calendar\"",
-                  "offset": 18
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.CalendarFunctionsStepDefs.user_navigates_to_tab_in_My_Calendar_page(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 182999500,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "page title should be \"Event Calendar\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Event Calendar\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4214275500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user views daily, weekly and monthly and overall schedules",
-            "match": {
-              "location": "com.azulcrm.step_definitions.CalendarFunctionsStepDefs.user_views_daily_weekly_and_monthly_and_overall_schedules()"
+              "location": "com.azulcrm.step_definitions.LogoutStepDefs.user_logs_out_from_portal()"
             },
             "keyword": "Then "
           }
@@ -156,11 +74,11 @@
         ]
       }
     ],
-    "name": "Calendar Functions",
+    "name": "User Logs Out",
     "description": "",
-    "id": "calendar-functions",
+    "id": "user-logs-out",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/CalendarFuntions.feature",
+    "uri": "file:src/test/resources/features/Logout.feature",
     "tags": []
   }
 ]
