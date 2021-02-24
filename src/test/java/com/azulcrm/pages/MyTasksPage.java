@@ -23,13 +23,13 @@ public class MyTasksPage extends BasePage{
     @FindBy(id = "tasks_panel_menu_view_all")
     public WebElement allTasksTab;
 
-    @FindBy(xpath = "//div[text()=\"In progress\"]")
+    @FindBy(xpath = "//div[text()='In progress']")
     public WebElement inProgress;
 
-    @FindBy(xpath = "//span[text()=\"Ongoing\"]")
+    @FindBy(xpath = "//span[text()='Ongoing']")
     public WebElement onGoing;
 
-    @FindBy(xpath = "//div[text()=\"Role: Ongoing\"]")
+    @FindBy(xpath = "//div[text()='Role: Ongoing']")
     public WebElement onGoingmessage;
 
 

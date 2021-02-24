@@ -16,10 +16,4 @@ public class CompanyDrivePage extends BasePage {
 
     @FindBy(xpath = "//*[@id='top_menu_id_docs_414529032']/a")
     public WebElement companyDriveButton;
-
-
-
-
-
-
 }
