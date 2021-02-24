@@ -7,8 +7,8 @@ Feature: User Should be able to Login
     Then page title should be "Portal"
 
 
-  Scenario Outline:Login with user credential wit
-    When the user logs in using following credentials "<userName>" and "<password>"
+  Scenario Outline:Test valid login options
+    When the user logs in using following "<userName>" and "<password>"
     Then page title should be "Portal"
     Examples:
       | userName                      | password |
@@ -16,7 +16,7 @@ Feature: User Should be able to Login
       | hr1@cybertekschool.com        | UserUser |
       | marketing1@cybertekschool.com | UserUser |
 
-
+  @wip
   Scenario Outline:Login with wrong user credential
     When the user should not be able to login with "<wuser>" and "<wpassword>"
     Then The user should receive a warning message
