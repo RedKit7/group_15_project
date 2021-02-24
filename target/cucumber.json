@@ -1,98 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4127295700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7979600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Portal\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 901832700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user navigates to \"Drive\" module",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Drive\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2991300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "page title should be \"My Drive\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Drive\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T19:39:06.120Z",
+        "start_timestamp": "2021-02-24T18:19:55.023Z",
         "before": [
           {
             "result": {
-              "duration": 4879563500,
+              "duration": 16795442500,
               "status": "passed"
             },
             "match": {
@@ -100,14 +15,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "User displays the windows in the My Drive Function",
+        "line": 3,
+        "name": "user logs out from portal",
         "description": "",
-        "id": "drive-functions-in-activity-stream;user-displays-the-windows-in-the-my-drive-function",
+        "id": "user-logs-out;user-logs-out-from-portal",
         "after": [
           {
             "result": {
-              "duration": 791644800,
+              "duration": 9769255700,
               "status": "passed"
             },
             "match": {
@@ -120,196 +35,35 @@
         "steps": [
           {
             "result": {
-              "duration": 677564600,
+              "duration": 14809584000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "\"My Drive\" window should be displayed",
+            "line": 4,
+            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"My Drive\"",
-                  "offset": 0
+                  "val": "\"human_resource_username\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 75
                 }
               ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4973300,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "as the title \"My Drive\" should be displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Drive\"",
-                  "offset": 13
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3560414000,
+              "duration": 2725803800,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+            "name": "user logs out from portal",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2991600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Portal\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 771670000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user navigates to \"Drive\" module",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Drive\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4991100,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "page title should be \"My Drive\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Drive\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T19:39:17.569Z",
-        "before": [
-          {
-            "result": {
-              "duration": 4293917800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 15,
-        "name": "User displays the windows in the Company Drive Function",
-        "description": "",
-        "id": "drive-functions-in-activity-stream;user-displays-the-windows-in-the-company-drive-function",
-        "after": [
-          {
-            "result": {
-              "duration": 795141700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 751615500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "\"Company Drive\" window should be displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Company Drive\"",
-                  "offset": 0
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4986700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "as the title \"Company drive\" should be displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Company drive\"",
-                  "offset": 13
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LogoutStepDefs.user_logs_out_from_portal()"
             },
             "keyword": "Then "
           }
@@ -321,20 +75,11 @@
         ]
       }
     ],
-    "name": "Drive Functions in Activity Stream",
+    "name": "User Logs Out",
     "description": "",
-    "id": "drive-functions-in-activity-stream",
+    "id": "user-logs-out",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DriveFuntions.feature",
-    "tags": [
-      {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/Logout.feature",
+    "tags": []
   }
 ]
