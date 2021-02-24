@@ -1,8 +1,8 @@
 
 Feature: Workgroups function on Activity Stream
-  //Background:
-    //Given the user logs in using following credentials "userName" and "password"
-    //When the user navigates to "Workgroups" module
+  Background:
+    Given the user logs in using following credentials "human_resource_username" and "password"
+    When the user navigates to "Workgroups" module
   @wip
   Scenario: Join to the groups
     When the user clicks on join button under the groups

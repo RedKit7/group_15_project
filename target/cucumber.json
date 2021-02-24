@@ -3,11 +3,60 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T19:29:29.261Z",
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3741891000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"human_resource_username\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 75
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 993101400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user navigates to \"Workgroups\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Workgroups\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T19:38:12.621Z",
         "before": [
           {
             "result": {
-              "duration": 6119236200,
+              "duration": 5992510500,
               "status": "passed"
             },
             "match": {
@@ -15,14 +64,14 @@
             }
           }
         ],
-        "line": 5,
-        "name": "Login with user credential",
+        "line": 7,
+        "name": "Join to the groups",
         "description": "",
-        "id": "user-should-be-able-to-login;login-with-user-credential",
+        "id": "workgroups-function-on-activity-stream;join-to-the-groups",
         "after": [
           {
             "result": {
-              "duration": 851246600,
+              "duration": 855426400,
               "status": "passed"
             },
             "match": {
@@ -35,41 +84,31 @@
         "steps": [
           {
             "result": {
-              "duration": 4069284200,
+              "duration": 1162168600,
               "status": "passed"
             },
-            "line": 6,
-            "name": "the user logs in using following credentials \"helpdesk_username\" and \"password\"",
+            "line": 8,
+            "name": "the user clicks on join button under the groups",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"helpdesk_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 69
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.the_user_clicks_on_join_button_under_the_groups()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 11001100,
+              "duration": 1063066100,
               "status": "passed"
             },
-            "line": 7,
-            "name": "page title should be \"Portal\"",
+            "line": 9,
+            "name": "A message as \"Request has been sent\" should be displayed",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Portal\"",
-                  "offset": 21
+                  "val": "\"Request has been sent\"",
+                  "offset": 13
                 }
               ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.a_message_as_should_be_displayed(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -81,11 +120,11 @@
         ]
       }
     ],
-    "name": "User Should be able to Login",
+    "name": "Workgroups function on Activity Stream",
     "description": "",
-    "id": "user-should-be-able-to-login",
+    "id": "workgroups-function-on-activity-stream",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/Workgroups.feature",
     "tags": []
   }
 ]
