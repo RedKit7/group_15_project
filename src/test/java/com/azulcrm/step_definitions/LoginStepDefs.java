@@ -12,11 +12,6 @@ public class LoginStepDefs {
 //Zeynep
     @When("the user logs in using following credentials {string} and {string}")
     public void the_user_logs_in_using_following_credentials_and(String username, String password) {
-        //String userNameEnt = ConfigurationReader.get("helpdesk_username");
-        //String passwordEnt = ConfigurationReader.get("helpdesk_password");
-       // String userNameEnt = "<userName>";
-       // String passwordEnt = "<password>";
-
         LoginPage loginPage =new LoginPage();
         switch (username){
             case "helpdesk_username":
@@ -40,24 +35,23 @@ public class LoginStepDefs {
         }
     }
 
-    @Then("the user reached to portal page")
-    public void the_user_reached_to_portal_page() {
-        String userNameEnt = "<userName>";
-        String passwordEnt = "<password>";
+    //@Then("the user reached to portal page")
+  //  public void the_user_reached_to_portal_page() {
+     //   String userNameEnt = "<userName>";
+     //   String passwordEnt = "<password>";
 
-        LoginPage loginPage =new LoginPage();
-        loginPage.login(userNameEnt, passwordEnt);
-        Assert.assertEquals("(6)Portal", Driver.get().getTitle());
-    }
+     //   LoginPage loginPage =new LoginPage();
+      //  loginPage.login(userNameEnt, passwordEnt);
+       // Assert.assertEquals("Portal", Driver.get().getTitle());
+
 
     @When("the user should not be able to login with {string} and {string}")
     public void the_user_should_not_be_able_to_login_with_and(String string, String string2) {
-        String userNameEnt = "<wuser>";
-        String passwordEnt = "<wpassword>";
+        LoginPage loginPage= new LoginPage();
+        loginPage.userNameEntrance.sendKeys(string);
+        loginPage.passwordEntrance.sendKeys(string2);
+        loginPage.submit.click();
 
-        LoginPage loginPage =new LoginPage();
-        loginPage.login(userNameEnt, passwordEnt);
-        Assert.assertNotEquals("(6)Portal", Driver.get().getTitle());
     }
 
     @Then("The user should receive a warning message")
@@ -66,4 +60,17 @@ public class LoginStepDefs {
     }
 
 
+    @When("the user logs in using following {string} and {string}")
+    public void theUserLogsInUsingFollowingAnd(String username,String password){
+
+    LoginPage loginPage= new LoginPage();
+    loginPage.userNameEntrance.sendKeys(username);
+    loginPage.passwordEntrance.sendKeys(password);
+    loginPage.submit.click();
+
+
+
+
+
+    }
 }

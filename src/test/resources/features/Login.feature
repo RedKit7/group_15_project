@@ -7,8 +7,8 @@ Feature: User Should be able to Login
     Then page title should be "Portal"
 
 
-  Scenario Outline:Login with user credential wit
-    When the user logs in using following credentials "<userName>" and "<password>"
+  Scenario Outline:Test valid login options
+    When the user logs in using following "<userName>" and "<password>"
     Then page title should be "Portal"
     Examples:
       | userName                      | password |

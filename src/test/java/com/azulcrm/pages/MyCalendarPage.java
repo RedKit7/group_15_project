@@ -29,12 +29,6 @@ public class MyCalendarPage extends BasePage{
     @FindBy (xpath = "//h2[@class='calendar-top-title']")
     public WebElement calendarTitle;
 
-    @FindBy (xpath = "//span[@class='calendar-day-of-week-day']")
-    public WebElement dailyCalendarWeekDay;
-
-    @FindBy (xpath = "//div[@class='calendar-grid-week-row-days-week']")
-    public WebElement weeklyCalendarDaysRow;
-
     @FindBy (xpath = "//input[@id='calendar_slider_696528_entry_name']")
     public WebElement newEventName;
 
@@ -80,7 +74,20 @@ public class MyCalendarPage extends BasePage{
     @FindBy (xpath = "//button[@id='calendar_slider_583012_close']")
     public WebElement cancelNewEventButton;
 
+    @FindBy (xpath = "//div[@class='calendar-day-view']")
+    public WebElement calendarDayView;
 
+    @FindBy (xpath = "//div[@class='calendar-week-view calendar-change-animate-week-to-day']")
+    public WebElement calendarWeekView;
+
+    @FindBy (xpath = "//div[@class='calendar-month-view']")
+    public WebElement calendarMonthView;
+
+    @FindBy (xpath = "//div[@class='calendar-list-view']")
+    public WebElement calendarScheduleView;
+
+    @FindBy (xpath = "//span[contains(text(),'Company Calendar')]")
+    public WebElement companyCalendarLink;
 
 
 
