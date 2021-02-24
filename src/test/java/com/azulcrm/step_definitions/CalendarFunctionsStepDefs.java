@@ -16,22 +16,41 @@ public class CalendarFunctionsStepDefs {
            MyCalendarPage myCalendarPage = new MyCalendarPage();
            BrowserUtils.waitForClickablility(myCalendarPage.dailyCalendar, 5);
            myCalendarPage.dailyCalendar.click();
-           BrowserUtils.waitForVisibility(myCalendarPage.dailyCalendar, 5);
+           BrowserUtils.waitForVisibility(myCalendarPage.calendarDayView, 5);
            Assert.assertTrue(new MyCalendarPage().calendarDayView.isDisplayed());
            BrowserUtils.waitForClickablility(myCalendarPage.weeklyCalendar, 5);
             myCalendarPage.weeklyCalendar.click();
+            BrowserUtils.waitForVisibility(myCalendarPage.calendarWeekView, 10);
             Assert.assertTrue(new MyCalendarPage().calendarWeekView.isDisplayed());
             BrowserUtils.waitForClickablility(myCalendarPage.monthlyCalendar, 5);
             myCalendarPage.monthlyCalendar.click();
+            BrowserUtils.waitForVisibility(myCalendarPage.calendarMonthView, 10);
             Assert.assertTrue(new MyCalendarPage().calendarMonthView.isDisplayed());
             BrowserUtils.waitForClickablility(myCalendarPage.schedule, 5);
             myCalendarPage.schedule.click();
+            BrowserUtils.waitForVisibility(myCalendarPage.calendarScheduleView, 10);
             Assert.assertTrue(new MyCalendarPage().calendarScheduleView.isDisplayed());
         }else if(Driver.get().getTitle().contains("Event")){
             CompanyCalendarPage companyCalendarPage = new CompanyCalendarPage();
             Assert.assertTrue(companyCalendarPage.pageSubTitle.getText().contains("Event Calendar"));
-        }
 
+            BrowserUtils.waitForClickablility(companyCalendarPage.dailyCalendar, 5);
+            companyCalendarPage.dailyCalendar.click();
+            BrowserUtils.waitForVisibility(companyCalendarPage.companyCalDayView, 10);
+            Assert.assertTrue(companyCalendarPage.companyCalDayView.isDisplayed());
+            BrowserUtils.waitForClickablility(companyCalendarPage.weeklyCalendar, 5);
+            companyCalendarPage.weeklyCalendar.click();
+            BrowserUtils.waitForVisibility(companyCalendarPage.companyCalWeekView, 10);
+            Assert.assertTrue(companyCalendarPage.companyCalWeekView.isDisplayed());
+            BrowserUtils.waitForClickablility(companyCalendarPage.monthlyCalendar, 5);
+            companyCalendarPage.monthlyCalendar.click();
+            BrowserUtils.waitForVisibility(companyCalendarPage.companyCalMonthView, 10);
+            Assert.assertTrue(companyCalendarPage.companyCalMonthView.isDisplayed());
+            BrowserUtils.waitForClickablility(companyCalendarPage.schedule, 5);
+            companyCalendarPage.schedule.click();
+            BrowserUtils.waitForVisibility(companyCalendarPage.companyCalScheduleView, 10);
+            Assert.assertTrue(companyCalendarPage.companyCalScheduleView.isDisplayed());
+        }
     }
 
     @When("user navigates to {string} tab in My Calendar page")
