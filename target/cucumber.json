@@ -3,60 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8969465100,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 137836700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Portal\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T19:01:08.095Z",
+        "start_timestamp": "2021-02-23T20:07:03.099Z",
         "before": [
           {
             "result": {
-              "duration": 20887633000,
+              "duration": 9856962000,
               "status": "passed"
             },
             "match": {
@@ -64,14 +15,14 @@
             }
           }
         ],
-        "line": 8,
-        "name": "user is navigates to Tasks page",
+        "line": 25,
+        "name": "Login with wrong user credential",
         "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;2",
         "after": [
           {
             "result": {
-              "duration": 2681010900,
+              "duration": 1036315600,
               "status": "passed"
             },
             "match": {
@@ -80,110 +31,55 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 3284284700,
+              "duration": 1410507100,
               "status": "passed"
             },
-            "line": 9,
-            "name": "the user navigates to \"Tasks\" module",
+            "line": 21,
+            "name": "the user should not be able to login with \"sadasdsa\" and \"UserUser\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Tasks\"",
-                  "offset": 22
+                  "val": "\"sadasdsa\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"UserUser\"",
+                  "offset": 57
                 }
               ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 508687900,
+              "duration": 56427000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the user should be able to display tasks \"In progress\" by clicking \"All Tasks\" tab",
+            "line": 22,
+            "name": "The user should receive a warning message",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"In progress\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"All Tasks\"",
-                  "offset": 67
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tasks"
+            "name": "@wip"
           }
         ]
       },
       {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 12577855900,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 124569300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Portal\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T19:01:44.967Z",
+        "start_timestamp": "2021-02-23T20:07:15.610Z",
         "before": [
           {
             "result": {
-              "duration": 11275840900,
+              "duration": 6056963400,
               "status": "passed"
             },
             "match": {
@@ -191,14 +87,14 @@
             }
           }
         ],
-        "line": 12,
-        "name": "user is navigates to Tasks page",
+        "line": 26,
+        "name": "Login with wrong user credential",
         "description": "",
-        "id": "user-is-on-the-tasks-page;user-is-navigates-to-tasks-page",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;3",
         "after": [
           {
             "result": {
-              "duration": 4869475200,
+              "duration": 1082786700,
               "status": "passed"
             },
             "match": {
@@ -207,106 +103,487 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 4675742800,
+              "duration": 1437274700,
               "status": "passed"
             },
-            "line": 13,
-            "name": "the user navigates to \"Tasks\" module",
+            "line": 21,
+            "name": "the user should not be able to login with \"helpdesk1@cybertekschool.com\" and \"sassasda\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Tasks\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 85278600,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "page title should be \"My tasks\"",
-            "match": {
-              "arguments": [
+                  "val": "\"helpdesk1@cybertekschool.com\"",
+                  "offset": 42
+                },
                 {
-                  "val": "\"My tasks\"",
-                  "offset": 21
+                  "val": "\"sassasda\"",
+                  "offset": 77
                 }
               ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 495695900,
+              "duration": 59000100,
               "status": "passed"
             },
-            "line": 15,
-            "name": "the user navigates to \"Ongoing\" tab in My Tasks page",
+            "line": 22,
+            "name": "The user should receive a warning message",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Ongoing\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_tab_in_My_Tasks_page(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2001900,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "the user should be able to display tasks \"Role: Ongoing\" by clicking \"Ongoing Tasks\" tab",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Role: Ongoing\"",
-                  "offset": 41
-                },
-                {
-                  "val": "\"Ongoing Tasks\"",
-                  "offset": 69
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_should_be_able_to_display_tasks_by_clicking_tab(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@tasks"
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T20:07:24.259Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7319494400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Login with wrong user credential",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1120445100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1437327400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should not be able to login with \"asfdasda\" and \"paasdasd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asfdasda\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"paasdasd\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51998100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user should receive a warning message",
+            "match": {
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T20:07:34.195Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5262323300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Login with wrong user credential",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1088820100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1208526400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should not be able to login with \"null\" and \"null\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"null\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"null\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67593800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user should receive a warning message",
+            "match": {
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T20:07:41.831Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5652466000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Login with wrong user credential",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 1097738300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1341509100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should not be able to login with \"helpdesk1@cybertekschool.com\" and \"null\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"helpdesk1@cybertekschool.com\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"null\"",
+                  "offset": 77
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59575800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user should receive a warning message",
+            "match": {
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T20:07:49.996Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6051893300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Login with wrong user credential",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 1454287800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1382491100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should not be able to login with \"null\" and \"UserUser\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"null\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"UserUser\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76029000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user should receive a warning message",
+            "match": {
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T20:07:58.972Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5595334800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Login with wrong user credential",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 951475600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1546674400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should not be able to login with \"asfdasda\" and \"null\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asfdasda\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"null\"",
+                  "offset": 57
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 55998100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user should receive a warning message",
+            "match": {
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-02-23T20:08:07.130Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5581859400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Login with wrong user credential",
+        "description": "",
+        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 954883900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1335849000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user should not be able to login with \"null\" and \"asfdasda\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"null\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"asfdasda\"",
+                  "offset": 53
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50512200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The user should receive a warning message",
+            "match": {
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "user is on the Tasks page",
+    "name": "User Should be able to Login",
     "description": "",
-    "id": "user-is-on-the-tasks-page",
+    "id": "user-should-be-able-to-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Tasks.feature",
-    "tags": [
-      {
-        "name": "@tasks",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": []
   }
 ]
