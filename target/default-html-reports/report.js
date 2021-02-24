@@ -1,8 +1,13 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Workgroups.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DriveFuntions.feature");
 formatter.feature({
-  "name": "Workgroups function on Activity Stream",
+  "name": "Drive Functions in Activity Stream",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
 });
 formatter.background({
   "name": "",
@@ -13,8 +18,8 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
-  "keyword": "Given "
+  "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+  "keyword": "When "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
@@ -23,8 +28,18 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates to \"Workgroups\" module",
-  "keyword": "When "
+  "name": "page title should be \"Portal\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Drive\" module",
+  "keyword": "And "
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
@@ -32,8 +47,18 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "page title should be \"My Drive\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "Join to the groups",
+  "name": "User displays the windows in the My Drive Function",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -43,21 +68,102 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "name": "the user clicks on join button under the groups",
-  "keyword": "When "
+  "name": "\"My Drive\" window should be displayed",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.the_user_clicks_on_join_button_under_the_groups()"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "A message as \"Request has been sent\" should be displayed",
+  "name": "as the title \"My Drive\" should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.a_message_as_should_be_displayed(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be \"Portal\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Drive\" module",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be \"My Drive\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User displays the windows in the Company Drive Function",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "\"Company Drive\" window should be displayed",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "as the title \"Company drive\" should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
