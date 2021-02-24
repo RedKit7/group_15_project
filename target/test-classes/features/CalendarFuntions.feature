@@ -2,16 +2,16 @@
 Feature: Calendar Functions
 
   Background:
-    Given the user logs in using following credentials "userName" and "password"
+    Given the user logs in using following credentials "human_resource_username" and "password"
     When the user navigates to "Calendar" module
     Then page title should be "Calendar"
 
   Scenario: user is able to display "My Calendar"
     Then user views daily, weekly and monthly and overall schedules
-
+  @wip
   Scenario: user is able to display Company Calendar
     Then user navigates to "Company Calendar" tab in My Calendar page
-    And page title should be "Company Calendar"
+    And page title should be "Event Calendar"
     Then user views daily, weekly and monthly and overall schedules
 
 
