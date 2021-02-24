@@ -1,117 +1,88 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Login.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DriveFuntions.feature");
 formatter.feature({
-  "name": "User Should be able to Login",
+  "name": "Drive Functions in Activity Stream",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenarioOutline({
-  "name": "Login with wrong user credential",
-  "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Feature",
   "tags": [
     {
       "name": "@wip"
     }
   ]
 });
-formatter.step({
-  "name": "the user should not be able to login with \"\u003cwuser\u003e\" and \"\u003cwpassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "The user should receive a warning message",
-  "keyword": "Then "
-});
-formatter.examples({
+formatter.background({
   "name": "",
   "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "wuser",
-        "wpassword"
-      ]
-    },
-    {
-      "cells": [
-        "sadasdsa",
-        "UserUser"
-      ]
-    },
-    {
-      "cells": [
-        "helpdesk1@cybertekschool.com",
-        "sassasda"
-      ]
-    },
-    {
-      "cells": [
-        "asfdasda",
-        "paasdasd"
-      ]
-    },
-    {
-      "cells": [
-        "null",
-        "null"
-      ]
-    },
-    {
-      "cells": [
-        "helpdesk1@cybertekschool.com",
-        "null"
-      ]
-    },
-    {
-      "cells": [
-        "null",
-        "UserUser"
-      ]
-    },
-    {
-      "cells": [
-        "asfdasda",
-        "null"
-      ]
-    },
-    {
-      "cells": [
-        "null",
-        "asfdasda"
-      ]
-    }
-  ]
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be \"Portal\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Drive\" module",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be \"My Drive\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
 });
 formatter.scenario({
-  "name": "Login with wrong user credential",
+  "name": "User displays the windows in the My Drive Function",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "the user should not be able to login with \"sadasdsa\" and \"UserUser\"",
-  "keyword": "When "
+  "name": "\"My Drive\" window should be displayed",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should receive a warning message",
+  "name": "as the title \"My Drive\" should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -119,251 +90,80 @@ formatter.result({
 formatter.after({
   "status": "passed"
 });
-formatter.scenario({
-  "name": "Login with wrong user credential",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Scenario Outline",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be \"Portal\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user navigates to \"Drive\" module",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be \"My Drive\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User displays the windows in the Company Drive Function",
+  "description": "",
+  "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
     }
   ]
 });
-formatter.before({
-  "status": "passed"
-});
 formatter.step({
-  "name": "the user should not be able to login with \"helpdesk1@cybertekschool.com\" and \"sassasda\"",
+  "name": "\"Company Drive\" window should be displayed",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The user should receive a warning message",
+  "name": "as the title \"Company drive\" should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with wrong user credential",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should not be able to login with \"asfdasda\" and \"paasdasd\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should receive a warning message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with wrong user credential",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should not be able to login with \"null\" and \"null\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should receive a warning message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with wrong user credential",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should not be able to login with \"helpdesk1@cybertekschool.com\" and \"null\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should receive a warning message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with wrong user credential",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should not be able to login with \"null\" and \"UserUser\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should receive a warning message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with wrong user credential",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should not be able to login with \"asfdasda\" and \"null\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should receive a warning message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Login with wrong user credential",
-  "description": "",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the user should not be able to login with \"null\" and \"asfdasda\"",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should receive a warning message",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"

@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-02-23T20:07:03.099Z",
+        "start_timestamp": "2021-02-24T18:19:55.023Z",
         "before": [
           {
             "result": {
-              "duration": 9856962000,
+              "duration": 16795442500,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 25,
-        "name": "Login with wrong user credential",
+        "line": 3,
+        "name": "user logs out from portal",
         "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;2",
+        "id": "user-logs-out;user-logs-out-from-portal",
         "after": [
           {
             "result": {
-              "duration": 1036315600,
+              "duration": 9769255700,
               "status": "passed"
             },
             "match": {
@@ -31,543 +31,39 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1410507100,
+              "duration": 14809584000,
               "status": "passed"
             },
-            "line": 21,
-            "name": "the user should not be able to login with \"sadasdsa\" and \"UserUser\"",
+            "line": 4,
+            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"sadasdsa\"",
-                  "offset": 42
+                  "val": "\"human_resource_username\"",
+                  "offset": 45
                 },
                 {
-                  "val": "\"UserUser\"",
-                  "offset": 57
+                  "val": "\"password\"",
+                  "offset": 75
                 }
               ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 56427000,
+              "duration": 2725803800,
               "status": "passed"
             },
-            "line": 22,
-            "name": "The user should receive a warning message",
+            "line": 5,
+            "name": "user logs out from portal",
             "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T20:07:15.610Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6056963400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 26,
-        "name": "Login with wrong user credential",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1082786700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1437274700,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should not be able to login with \"helpdesk1@cybertekschool.com\" and \"sassasda\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"helpdesk1@cybertekschool.com\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"sassasda\"",
-                  "offset": 77
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 59000100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The user should receive a warning message",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T20:07:24.259Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7319494400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 27,
-        "name": "Login with wrong user credential",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 1120445100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1437327400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should not be able to login with \"asfdasda\" and \"paasdasd\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"asfdasda\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"paasdasd\"",
-                  "offset": 57
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 51998100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The user should receive a warning message",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T20:07:34.195Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5262323300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 28,
-        "name": "Login with wrong user credential",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 1088820100,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1208526400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should not be able to login with \"null\" and \"null\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"null\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"null\"",
-                  "offset": 53
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 67593800,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The user should receive a warning message",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T20:07:41.831Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5652466000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 29,
-        "name": "Login with wrong user credential",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;6",
-        "after": [
-          {
-            "result": {
-              "duration": 1097738300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1341509100,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should not be able to login with \"helpdesk1@cybertekschool.com\" and \"null\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"helpdesk1@cybertekschool.com\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"null\"",
-                  "offset": 77
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 59575800,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The user should receive a warning message",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T20:07:49.996Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6051893300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 30,
-        "name": "Login with wrong user credential",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;7",
-        "after": [
-          {
-            "result": {
-              "duration": 1454287800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1382491100,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should not be able to login with \"null\" and \"UserUser\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"null\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"UserUser\"",
-                  "offset": 53
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 76029000,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The user should receive a warning message",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T20:07:58.972Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5595334800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 31,
-        "name": "Login with wrong user credential",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;8",
-        "after": [
-          {
-            "result": {
-              "duration": 951475600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1546674400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should not be able to login with \"asfdasda\" and \"null\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"asfdasda\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"null\"",
-                  "offset": 57
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 55998100,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The user should receive a warning message",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-23T20:08:07.130Z",
-        "before": [
-          {
-            "result": {
-              "duration": 5581859400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 32,
-        "name": "Login with wrong user credential",
-        "description": "",
-        "id": "user-should-be-able-to-login;login-with-wrong-user-credential;;9",
-        "after": [
-          {
-            "result": {
-              "duration": 954883900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 1335849000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "the user should not be able to login with \"null\" and \"asfdasda\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"null\"",
-                  "offset": 42
-                },
-                {
-                  "val": "\"asfdasda\"",
-                  "offset": 53
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_not_be_able_to_login_with_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 50512200,
-              "status": "passed"
-            },
-            "line": 22,
-            "name": "The user should receive a warning message",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_should_receive_a_warning_message()"
+              "location": "com.azulcrm.step_definitions.LogoutStepDefs.user_logs_out_from_portal()"
             },
             "keyword": "Then "
           }
@@ -579,11 +75,11 @@
         ]
       }
     ],
-    "name": "User Should be able to Login",
+    "name": "User Logs Out",
     "description": "",
-    "id": "user-should-be-able-to-login",
+    "id": "user-logs-out",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Login.feature",
+    "uri": "file:src/test/resources/features/Logout.feature",
     "tags": []
   }
 ]
