@@ -1,19 +1,21 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Logout.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DefaultLogin.feature");
 formatter.feature({
-  "name": "User Logs Out",
+  "name": "Default Login",
   "description": "",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
 });
 formatter.scenario({
-  "name": "user logs out from portal",
+  "name": "Default Login Function",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
       "name": "@wip"
-    },
-    {
-      "name": "@AZ-149"
     }
   ]
 });
@@ -21,21 +23,11 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
+  "name": "user logs in with valid user info",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user logs out from portal",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.LogoutStepDefs.user_logs_out_from_portal()"
+  "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
 });
 formatter.result({
   "status": "passed"

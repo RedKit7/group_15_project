@@ -6,9 +6,11 @@ Feature: Calendar Functions
     When the user navigates to "Calendar" module
     Then page title should be "Calendar"
 
+  @AZ-145
   Scenario: user is able to display "My Calendar"
-    Then user views daily, weekly and monthly and overall schedules
+    And user views daily, weekly and monthly and overall schedules
 
+  @AZ-146
   Scenario: user is able to display Company Calendar
     Then user navigates to "Company Calendar" tab in My Calendar page
     And page title should be "Event Calendar"

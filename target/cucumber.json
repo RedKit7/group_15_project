@@ -1,13 +1,13 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-02-24T19:34:17.081Z",
+        "start_timestamp": "2021-03-03T15:47:01.340Z",
         "before": [
           {
             "result": {
-              "duration": 11180762700,
+              "duration": 6233455200,
               "status": "passed"
             },
             "match": {
@@ -16,13 +16,13 @@
           }
         ],
         "line": 3,
-        "name": "user logs out from portal",
+        "name": "Default Login Function",
         "description": "",
-        "id": "user-logs-out;user-logs-out-from-portal",
+        "id": "default-login;default-login-function",
         "after": [
           {
             "result": {
-              "duration": 3178271700,
+              "duration": 1158024800,
               "status": "passed"
             },
             "match": {
@@ -35,54 +35,38 @@
         "steps": [
           {
             "result": {
-              "duration": 9366387500,
+              "duration": 7842249700,
               "status": "passed"
             },
             "line": 4,
-            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
+            "name": "user logs in with valid user info",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"human_resource_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 75
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1928653500,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user logs out from portal",
-            "match": {
-              "location": "com.azulcrm.step_definitions.LogoutStepDefs.user_logs_out_from_portal()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
             "name": "@wip"
-          },
-          {
-            "name": "@AZ-149"
           }
         ]
       }
     ],
-    "name": "User Logs Out",
+    "name": "Default Login",
     "description": "",
-    "id": "user-logs-out",
+    "id": "default-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Logout.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/DefaultLogin.feature",
+    "tags": [
+      {
+        "name": "@wip",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
