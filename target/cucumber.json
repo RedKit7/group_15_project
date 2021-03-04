@@ -3,60 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4639036900,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"human_resource_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 75
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1692609300,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user navigates to \"Workgroups\" module",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Workgroups\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T17:54:29.374Z",
+        "start_timestamp": "2021-03-03T15:47:01.340Z",
         "before": [
           {
             "result": {
-              "duration": 8054210800,
+              "duration": 6233455200,
               "status": "passed"
             },
             "match": {
@@ -64,14 +15,14 @@
             }
           }
         ],
-        "line": 7,
-        "name": "Join to the groups",
+        "line": 3,
+        "name": "Default Login Function",
         "description": "",
-        "id": "workgroups-function-on-activity-stream;join-to-the-groups",
+        "id": "default-login;default-login-function",
         "after": [
           {
             "result": {
-              "duration": 1267319300,
+              "duration": 1158024800,
               "status": "passed"
             },
             "match": {
@@ -84,191 +35,32 @@
         "steps": [
           {
             "result": {
-              "duration": 1223999800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "the user clicks on join button under the groups",
-            "match": {
-              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.the_user_clicks_on_join_button_under_the_groups()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1074814700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "A message as \"Request has been sent\" should be displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Request has been sent\"",
-                  "offset": 13
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.a_message_as_should_be_displayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@workGroupsFunction"
-          },
-          {
-            "name": "@AZ-158"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6479582200,
+              "duration": 7842249700,
               "status": "passed"
             },
             "line": 4,
-            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
+            "name": "user logs in with valid user info",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"human_resource_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"password\"",
-                  "offset": 75
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+              "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 2057705000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "the user navigates to \"Workgroups\" module",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Workgroups\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T17:54:47.460Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7368864400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "Adding groups to the favorites",
-        "description": "",
-        "id": "workgroups-function-on-activity-stream;adding-groups-to-the-favorites",
-        "after": [
-          {
-            "result": {
-              "duration": 948733900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 189217500,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "the user clicks on the star next to the group name",
-            "match": {
-              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.the_user_clicks_on_the_star_next_to_the_group_name()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 171324500,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "clicks on search box",
-            "match": {
-              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.clicks_on_search_box()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 278067200,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "clicks on favorites",
-            "match": {
-              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.clicks_on_favorites()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 134198500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "The groups which are added to favorites should be displayed",
-            "match": {
-              "location": "com.azulcrm.step_definitions.WorkgroupsStepDefs.the_groups_which_are_added_to_favorites_should_be_displayed()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@workGroupsFunction"
-          },
-          {
-            "name": "@AZ-159"
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Workgroups function on Activity Stream",
+    "name": "Default Login",
     "description": "",
-    "id": "workgroups-function-on-activity-stream",
+    "id": "default-login",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Workgroups.feature",
+    "uri": "file:src/test/resources/features/DefaultLogin.feature",
     "tags": [
       {
-        "name": "@workGroupsFunction",
+        "name": "@wip",
         "type": "Tag",
         "location": {
           "line": 1,

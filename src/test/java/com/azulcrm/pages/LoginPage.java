@@ -1,5 +1,6 @@
 package com.azulcrm.pages;
 
+import com.azulcrm.utilities.ConfigurationReader;
 import com.azulcrm.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -26,12 +27,12 @@ public class LoginPage extends BasePage{
 
     @FindBy(xpath="//div[@class='errortext']")
     public WebElement loginError;
-    /*
-ublic void login(String userNameStr, String passwordStr) {
-        userName.sendKeys(userNameStr);
-        password.sendKeys(passwordStr);
+
+    public void login(){
+        userNameEntrance.sendKeys(ConfigurationReader.get("human_resource_username"));
+        passwordEntrance.sendKeys(ConfigurationReader.get("human_resource_password"));
         submit.click();
- */
+    }
 
     public void login(String userNameEnt, String passwordEnt) {
         userNameEntrance.sendKeys(userNameEnt);
