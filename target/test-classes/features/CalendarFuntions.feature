@@ -7,7 +7,7 @@ Feature: Calendar Functions
     Then page title should be "Calendar"
 
   Scenario: user is able to display "My Calendar"
-    Then user views daily, weekly and monthly and overall schedules
+    And user views daily, weekly and monthly and overall schedules
 
   Scenario: user is able to display Company Calendar
     Then user navigates to "Company Calendar" tab in My Calendar page

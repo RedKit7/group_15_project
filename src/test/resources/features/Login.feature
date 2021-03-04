@@ -16,7 +16,7 @@ Feature: User Should be able to Login
       | hr1@cybertekschool.com        | UserUser |
       | marketing1@cybertekschool.com | UserUser |
 
-  @wip
+
   Scenario Outline:Login with wrong user credential
     When the user should not be able to login with "<wuser>" and "<wpassword>"
     Then The user should receive a warning message
