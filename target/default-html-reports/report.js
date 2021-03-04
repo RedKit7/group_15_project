@@ -64,6 +64,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@wip"
+    },
+    {
+      "name": "@AZ-157"
     }
   ]
 });
@@ -145,6 +148,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@wip"
+    },
+    {
+      "name": "@AZ-161"
     }
   ]
 });
