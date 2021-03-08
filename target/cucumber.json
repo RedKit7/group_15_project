@@ -3,11 +3,60 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-03T15:47:01.340Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8801294900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"marketing_username\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"marketing_password\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23935800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T15:56:15.366Z",
         "before": [
           {
             "result": {
-              "duration": 6233455200,
+              "duration": 13440442200,
               "status": "passed"
             },
             "match": {
@@ -15,14 +64,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Default Login Function",
+        "line": 9,
+        "name": "User can find the specific course.",
         "description": "",
-        "id": "default-login;default-login-function",
+        "id": "user-is-on-the-meeting-rooms-page;user-can-find-the-specific-course.",
         "after": [
           {
             "result": {
-              "duration": 1158024800,
+              "duration": 2163470200,
               "status": "passed"
             },
             "match": {
@@ -35,36 +84,549 @@
         "steps": [
           {
             "result": {
-              "duration": 7842249700,
+              "duration": 3011278100,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user logs in with valid user info",
+            "line": 10,
+            "name": "the user navigates to \"Services\" module",
             "match": {
-              "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
+              "arguments": [
+                {
+                  "val": "\"Services\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1785468800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user navigates to \"Training\" tab in Meeting Rooms page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Training\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_navigates_to_tab_in_Meeting_Rooms_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 127513100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the user should be able see Find input",
+            "match": {
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_should_be_able_see_Find_input()"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@services"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9879321200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"marketing_username\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"marketing_password\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88793700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T15:56:45.053Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10103474800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "User can see his/her courses under MyCourses",
+        "description": "",
+        "id": "user-is-on-the-meeting-rooms-page;user-can-see-his/her-courses-under-mycourses",
+        "after": [
+          {
+            "result": {
+              "duration": 1193695800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2072100000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "the user navigates to \"Services\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Services\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1631226300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the user navigates to \"Training\" tab in Meeting Rooms page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Training\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_navigates_to_tab_in_Meeting_Rooms_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1300810700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "the user navigates to \"My Courses\" tab in Course list page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"My Courses\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_navigates_to_tab_in_Course_list_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27446200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "page title should be \"Course report\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Course report\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@services"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 9701962000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"marketing_username\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"marketing_password\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72866000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T15:57:11.385Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11529986400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User can see his/her grades under Grade Book.",
+        "description": "",
+        "id": "user-is-on-the-meeting-rooms-page;user-can-see-his/her-grades-under-grade-book.",
+        "after": [
+          {
+            "result": {
+              "duration": 1936376000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2008555900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "the user navigates to \"Services\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Services\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1231449300,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "the user navigates to \"Training\" tab in Meeting Rooms page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Training\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_navigates_to_tab_in_Meeting_Rooms_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1111821000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user navigates to \"Grade Book\" tab in Course list page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Grade Book\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_navigates_to_tab_in_Course_list_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 18948300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "page title should be \"Test results\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test results\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@services"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8695473400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"marketing_username\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"marketing_password\"",
+                  "offset": 70
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84771500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-08T15:57:39.018Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10067570200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "User can edit his/her Student\u0027s Profile.",
+        "description": "",
+        "id": "user-is-on-the-meeting-rooms-page;user-can-edit-his/her-student-s-profile.",
+        "after": [
+          {
+            "result": {
+              "duration": 1463712200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3628981300,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "the user navigates to \"Services\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Services\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2022390000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "the user navigates to \"Training\" tab in Meeting Rooms page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Training\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_navigates_to_tab_in_Meeting_Rooms_page(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1746406200,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the user navigates to \"Profile\" tab in Course list page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Profile\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.ServicesStepDefs.the_user_navigates_to_tab_in_Course_list_page(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21941100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "page title should be \"Student\u0027s Profile\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Student\u0027s Profile\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@services"
           }
         ]
       }
     ],
-    "name": "Default Login",
+    "name": "user is on the Meeting Rooms page",
     "description": "",
-    "id": "default-login",
+    "id": "user-is-on-the-meeting-rooms-page",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DefaultLogin.feature",
+    "uri": "file:src/test/resources/features/Services.feature",
     "tags": [
       {
-        "name": "@wip",
+        "name": "@services",
         "type": "Tag",
         "location": {
           "line": 1,
-          "column": 1
+          "column": 3
         }
       }
     ]
