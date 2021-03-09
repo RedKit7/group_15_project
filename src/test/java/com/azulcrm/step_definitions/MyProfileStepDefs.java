@@ -1,6 +1,7 @@
 package com.azulcrm.step_definitions;
 
 import com.azulcrm.pages.MyProfilePage;
+import com.azulcrm.pages.PortalPage;
 import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -24,8 +25,9 @@ public class MyProfileStepDefs {
 
     @When("the user clicks on {string} in the User Menu")
     public void theUserClicksOnInTheUserMenu(String userMenuItem) {
-        String locator = "//span[text()='"+userMenuItem+"']";
-        Driver.get().findElement(By.xpath(locator)).click();
+
+        new PortalPage().userBlockClick(userMenuItem);
+
     }
 
 
