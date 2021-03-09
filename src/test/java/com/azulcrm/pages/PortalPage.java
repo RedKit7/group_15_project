@@ -20,4 +20,15 @@ public class PortalPage extends BasePage{
     @CacheLookup
     public WebElement userMenu;
 
+
+
+    public void userBlockClick(String userMenuItem){
+
+        String locator = "//span[text()='"+userMenuItem+"']";
+        Driver.get().findElement(By.xpath(locator)).click();
+
+    }
+
+
+
 }
