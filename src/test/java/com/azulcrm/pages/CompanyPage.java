@@ -2,6 +2,7 @@ package com.azulcrm.pages;
 
 import com.azulcrm.utilities.BrowserUtils;
 import com.azulcrm.utilities.Driver;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,6 +38,7 @@ public class CompanyPage extends BasePage{
 
         BrowserUtils.waitForClickablility(By.xpath(buttonLocator), 5);
         WebElement tabElement = Driver.get().findElement(By.xpath(buttonLocator));
+        Assert.assertTrue(tabElement.isEnabled());
         tabElement.click();
 
     }
