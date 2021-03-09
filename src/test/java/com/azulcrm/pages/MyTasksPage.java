@@ -29,8 +29,37 @@ public class MyTasksPage extends BasePage{
     @FindBy(xpath = "//span[text()='Ongoing']")
     public WebElement onGoing;
 
+    @FindBy(xpath = "//span[text()='Assisting']")
+    public WebElement assistingTab;
+
+    @FindBy(xpath = "//span[text()='Set by me']")
+    public WebElement setByMeTab;
+
+    @FindBy(xpath = "//span[text()='Projects']")
+    public WebElement projectsTab;
+
+    @FindBy(xpath = "//span[text()='Efficiency']")
+    public WebElement efficiencyTab;
+
+    @FindBy(xpath = "//span[text()='Recycle Bin']")
+    public WebElement recycleBinTab;
+
+    @FindBy(xpath = "//a[@id='tasks-buttonAdd']")
+    public WebElement newTaskButton;
+
+    @FindBy(xpath = "//iframe[contains(@id,'iframe_')]")
+    public WebElement newTaskFrame;
+
+    @FindBy(xpath = "//span[text()='New task' and @id='pagetitle']")
+    public WebElement newTaskPageTitle;
+
     @FindBy(xpath = "//div[text()='Role: Ongoing']")
     public WebElement onGoingmessage;
 
+    @FindBy(xpath = "//div[contains(text(),'Role: Assisting')]")
+    public WebElement assistingDisplay;
 
-}
+    @FindBy(xpath = "//div[contains(text(),'Role: Set by me')]")
+    public WebElement setByMeDisplay;
+
+    }

@@ -1,21 +1,16 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DefaultLogin.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/Logout.feature");
 formatter.feature({
-  "name": "Default Login",
+  "name": "User Logs Out",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@wip"
-    }
-  ]
+  "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "Default Login Function",
+  "name": "new deneme",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@wip"
+      "name": "@wip2"
     }
   ]
 });
@@ -28,6 +23,26 @@ formatter.step({
 });
 formatter.match({
   "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on filter and search box",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.LogoutStepDefs.theUserClicksOnFilterAndSearchBox()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user creates a list of date options",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.LogoutStepDefs.userCreatesAListOfDateOptions()"
 });
 formatter.result({
   "status": "passed"

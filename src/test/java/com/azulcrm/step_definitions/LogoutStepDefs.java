@@ -1,10 +1,16 @@
 package com.azulcrm.step_definitions;
 
+import com.azulcrm.pages.PortalPage;
 import com.azulcrm.utilities.BrowserUtils;
 import com.azulcrm.utilities.Driver;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
 
 public class LogoutStepDefs {
 
@@ -16,4 +22,5 @@ public class LogoutStepDefs {
         Driver.get().findElement(By.xpath("//span[contains(text(),'Log out')]")).click();
         Assert.assertTrue(Driver.get().getTitle().equals("Authorization"));
     }
+
 }
