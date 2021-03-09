@@ -171,7 +171,7 @@ Feature:Filter and search functions on Activity Stream
       | Announcements |
       | Workflows     |
 
-  @wip
+  
   Scenario Outline: 7- User can save a filter
     Given the user should be able to click Save Filter button
     Then the user should be able to give "<any name>" and click save button
