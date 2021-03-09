@@ -5,6 +5,11 @@ import com.azulcrm.utilities.Driver;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
 
 public class CompanyStepDefs {
 
@@ -20,6 +25,7 @@ public class CompanyStepDefs {
 
     @Then("the user should be able to see Add News Pop-up Window")
     public void the_user_should_be_able_to_see_Add_News_Pop_up_Window() {
+       Driver.get().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         Assert.assertTrue(pageObject.previewText.isDisplayed());
 
