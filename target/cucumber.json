@@ -1,9 +1,9 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "line": 4,
+        "line": 3,
         "name": "",
         "description": "",
         "type": "background",
@@ -11,194 +11,22 @@
         "steps": [
           {
             "result": {
-              "duration": 5907746100,
+              "duration": 6764882400,
               "status": "passed"
             },
-            "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
+            "line": 4,
+            "name": "user logs in with valid user info",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 22934600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "page title should be \"Portal\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Portal\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2009840000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "the user navigates to \"Drive\" module",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Drive\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 14520000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "page title should be \"My Drive\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Drive\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-02-25T18:30:39.968Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7281236700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 11,
-        "name": "User displays the windows in the My Drive Function",
-        "description": "",
-        "id": "drive-functions-in-activity-stream;user-displays-the-windows-in-the-my-drive-function",
-        "after": [
-          {
-            "result": {
-              "duration": 1244804600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1135392500,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "\"My Drive\" window should be displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Drive\"",
-                  "offset": 0
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 38899900,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "as the title \"My Drive\" should be displayed",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Drive\"",
-                  "offset": 13
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@wip"
-          },
-          {
-            "name": "@AZ-157"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6071316300,
+              "duration": 4986500,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"marketing_username\"",
-                  "offset": 45
-                },
-                {
-                  "val": "\"marketing_password\"",
-                  "offset": 70
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 12963300,
-              "status": "passed"
-            },
-            "line": 6,
             "name": "page title should be \"Portal\"",
             "match": {
               "arguments": [
@@ -213,48 +41,24 @@
           },
           {
             "result": {
-              "duration": 1661303900,
+              "duration": 1072163000,
               "status": "passed"
             },
-            "line": 7,
-            "name": "the user navigates to \"Drive\" module",
+            "line": 6,
+            "name": "user should be able to click Filter and Search box",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Drive\"",
-                  "offset": 22
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.user_should_be_able_to_click_Filter_and_Search_box()"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 8969300,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "page title should be \"My Drive\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"My Drive\"",
-                  "offset": 21
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
-            },
-            "keyword": "Then "
           }
         ]
       },
       {
-        "start_timestamp": "2021-02-25T18:30:57.816Z",
+        "start_timestamp": "2021-03-09T18:02:10.107Z",
         "before": [
           {
             "result": {
-              "duration": 5536950400,
+              "duration": 4083610300,
               "status": "passed"
             },
             "match": {
@@ -262,14 +66,14 @@
             }
           }
         ],
-        "line": 16,
-        "name": "User displays the windows in the Company Drive Function",
+        "line": 180,
+        "name": "7- User can save a filter",
         "description": "",
-        "id": "drive-functions-in-activity-stream;user-displays-the-windows-in-the-company-drive-function",
+        "id": "filter-and-search-functions-on-activity-stream;7--user-can-save-a-filter;;2",
         "after": [
           {
             "result": {
-              "duration": 856848200,
+              "duration": 1318258300,
               "status": "passed"
             },
             "match": {
@@ -278,41 +82,35 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1042965000,
+              "duration": 47762700,
               "status": "passed"
             },
-            "line": 17,
-            "name": "\"Company Drive\" window should be displayed",
+            "line": 176,
+            "name": "the user should be able to click Save Filter button",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Company Drive\"",
-                  "offset": 0
-                }
-              ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToClickSaveFilterButton()"
             },
-            "keyword": "When "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 10972200,
+              "duration": 150563100,
               "status": "passed"
             },
-            "line": 18,
-            "name": "as the title \"Company drive\" should be displayed",
+            "line": 177,
+            "name": "the user should be able to give \"FIRST SEARCH\" and click save button",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Company drive\"",
-                  "offset": 13
+                  "val": "\"FIRST SEARCH\"",
+                  "offset": 32
                 }
               ],
-              "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToGive(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -320,27 +118,253 @@
         "tags": [
           {
             "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4305242400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user logs in with valid user info",
+            "match": {
+              "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
+            },
+            "keyword": "Given "
           },
           {
-            "name": "@AZ-161"
+            "result": {
+              "duration": 2996100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1064975400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should be able to click Filter and Search box",
+            "match": {
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.user_should_be_able_to_click_Filter_and_Search_box()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-09T18:02:23.608Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3656407400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 181,
+        "name": "7- User can save a filter",
+        "description": "",
+        "id": "filter-and-search-functions-on-activity-stream;7--user-can-save-a-filter;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 821041800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 63340200,
+              "status": "passed"
+            },
+            "line": 176,
+            "name": "the user should be able to click Save Filter button",
+            "match": {
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToClickSaveFilterButton()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 149983600,
+              "status": "passed"
+            },
+            "line": 177,
+            "name": "the user should be able to give \"SECOND SEARCH\" and click save button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SECOND SEARCH\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToGive(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4466027300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user logs in with valid user info",
+            "match": {
+              "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4984200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "page title should be \"Portal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Portal\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1072459400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should be able to click Filter and Search box",
+            "match": {
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.user_should_be_able_to_click_Filter_and_Search_box()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-09T18:02:33.697Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3601118100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 182,
+        "name": "7- User can save a filter",
+        "description": "",
+        "id": "filter-and-search-functions-on-activity-stream;7--user-can-save-a-filter;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 773756000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.azulcrm.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 92455000,
+              "status": "passed"
+            },
+            "line": 176,
+            "name": "the user should be able to click Save Filter button",
+            "match": {
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToClickSaveFilterButton()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 179892200,
+              "status": "passed"
+            },
+            "line": 177,
+            "name": "the user should be able to give \"THIRD SEARCH\" and click save button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"THIRD SEARCH\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToGive(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
           }
         ]
       }
     ],
-    "name": "Drive Functions in Activity Stream",
+    "name": "Filter and search functions on Activity Stream",
     "description": "",
-    "id": "drive-functions-in-activity-stream",
+    "id": "filter-and-search-functions-on-activity-stream",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DriveFuntions.feature",
-    "tags": [
-      {
-        "name": "@wip",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/resources/features/FilterAndSearch.feature",
+    "tags": []
   }
 ]

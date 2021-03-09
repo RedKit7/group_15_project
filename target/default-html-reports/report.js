@@ -1,11 +1,51 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/DriveFuntions.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/FilterAndSearch.feature");
 formatter.feature({
-  "name": "Drive Functions in Activity Stream",
+  "name": "Filter and search functions on Activity Stream",
   "description": "",
-  "keyword": "Feature",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "name": "7- User can save a filter",
+  "description": "",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user should be able to click Save Filter button",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "the user should be able to give \"\u003cany name\u003e\" and click save button",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "any name"
+      ]
+    },
+    {
+      "cells": [
+        "FIRST SEARCH"
+      ]
+    },
+    {
+      "cells": [
+        "SECOND SEARCH"
+      ]
+    },
+    {
+      "cells": [
+        "THIRD SEARCH"
+      ]
     }
   ]
 });
@@ -18,11 +58,11 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-  "keyword": "When "
+  "name": "user logs in with valid user info",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+  "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
 });
 formatter.result({
   "status": "passed"
@@ -38,54 +78,41 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates to \"Drive\" module",
+  "name": "user should be able to click Filter and Search box",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "page title should be \"My Drive\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.user_should_be_able_to_click_Filter_and_Search_box()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "User displays the windows in the My Drive Function",
+  "name": "7- User can save a filter",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
-    },
-    {
-      "name": "@AZ-157"
     }
   ]
 });
 formatter.step({
-  "name": "\"My Drive\" window should be displayed",
+  "name": "the user should be able to click Save Filter button",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToClickSaveFilterButton()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "as the title \"My Drive\" should be displayed",
+  "name": "the user should be able to give \"FIRST SEARCH\" and click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToGive(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
@@ -102,11 +129,11 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user logs in using following credentials \"marketing_username\" and \"marketing_password\"",
-  "keyword": "When "
+  "name": "user logs in with valid user info",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+  "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
 });
 formatter.result({
   "status": "passed"
@@ -122,17 +149,68 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the user navigates to \"Drive\" module",
+  "name": "user should be able to click Filter and Search box",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.user_should_be_able_to_click_Filter_and_Search_box()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "7- User can save a filter",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@wip"
+    }
+  ]
+});
+formatter.step({
+  "name": "the user should be able to click Save Filter button",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToClickSaveFilterButton()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "page title should be \"My Drive\"",
+  "name": "the user should be able to give \"SECOND SEARCH\" and click save button",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToGive(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user logs in with valid user info",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "page title should be \"Portal\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -141,35 +219,42 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "user should be able to click Filter and Search box",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.user_should_be_able_to_click_Filter_and_Search_box()"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.scenario({
-  "name": "User displays the windows in the Company Drive Function",
+  "name": "7- User can save a filter",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
       "name": "@wip"
-    },
-    {
-      "name": "@AZ-161"
     }
   ]
 });
 formatter.step({
-  "name": "\"Company Drive\" window should be displayed",
-  "keyword": "When "
+  "name": "the user should be able to click Save Filter button",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.windowShouldBeDisplayed(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToClickSaveFilterButton()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "as the title \"Company drive\" should be displayed",
+  "name": "the user should be able to give \"THIRD SEARCH\" and click save button",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.azulcrm.step_definitions.DriveFunctionsStepDefs.asTheTitleShouldBeDisplayed(java.lang.String)"
+  "location": "com.azulcrm.step_definitions.FilterAndSearchStepDefs.theUserShouldBeAbleToGive(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
