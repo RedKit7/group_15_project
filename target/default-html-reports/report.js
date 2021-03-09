@@ -44,6 +44,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@services"
+    },
+    {
+      "name": "@AZ-199"
     }
   ]
 });
@@ -115,6 +118,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@services"
+    },
+    {
+      "name": "@AZ-200"
     }
   ]
 });
@@ -196,6 +202,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@services"
+    },
+    {
+      "name": "@AZ-201"
     }
   ]
 });
@@ -277,6 +286,9 @@ formatter.scenario({
   "tags": [
     {
       "name": "@services"
+    },
+    {
+      "name": "@AZ-202"
     }
   ]
 });
