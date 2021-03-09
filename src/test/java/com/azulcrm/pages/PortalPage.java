@@ -21,14 +21,12 @@ public class PortalPage extends BasePage{
     public WebElement userMenu;
 
 
-
     public void userBlockClick(String userMenuItem){
 
         String locator = "//span[text()='"+userMenuItem+"']";
         Driver.get().findElement(By.xpath(locator)).click();
 
     }
-
 
 
 }
