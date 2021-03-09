@@ -3,11 +3,60 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-03-03T15:47:01.340Z",
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4092093300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user logs in using following credentials \"human_resource_username\" and \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"human_resource_username\"",
+                  "offset": 45
+                },
+                {
+                  "val": "\"password\"",
+                  "offset": 75
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.LoginStepDefs.the_user_logs_in_using_following_credentials_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1396615200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user navigates to \"Company\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Company\"",
+                  "offset": 22
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.TasksStepDefs.the_user_navigates_to_module(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-09T00:30:40.782Z",
         "before": [
           {
             "result": {
-              "duration": 6233455200,
+              "duration": 5128158800,
               "status": "passed"
             },
             "match": {
@@ -15,14 +64,14 @@
             }
           }
         ],
-        "line": 3,
-        "name": "Default Login Function",
+        "line": 30,
+        "name": "User can see an album and photos page by clicking \"Photo Gallery\" tab.",
         "description": "",
-        "id": "default-login;default-login-function",
+        "id": "as-a-user--i-should-be-able-to-use-functions-under-company-menu;user-can-see-an-album-and-photos-page-by-clicking-\"photo-gallery\"-tab.",
         "after": [
           {
             "result": {
-              "duration": 1158024800,
+              "duration": 824780300,
               "status": "passed"
             },
             "match": {
@@ -35,32 +84,59 @@
         "steps": [
           {
             "result": {
-              "duration": 7842249700,
+              "duration": 1360280200,
               "status": "passed"
             },
-            "line": 4,
-            "name": "user logs in with valid user info",
+            "line": 31,
+            "name": "the user clicks on \"Photo Gallery\" tab in Company Page",
             "match": {
-              "location": "com.azulcrm.step_definitions.DefaultLoginStefDefs.user_logs_in_with_valid_user_info()"
+              "arguments": [
+                {
+                  "val": "\"Photo Gallery\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.CompanyStepDefs.the_user_clicks_on_tab_in_Company_Page(java.lang.String)"
             },
-            "keyword": "Given "
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9975000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "page title should be \"Photo gallery\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Photo gallery\"",
+                  "offset": 21
+                }
+              ],
+              "location": "com.azulcrm.step_definitions.MyProfileStepDefs.page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@wip"
+            "name": "@Company"
+          },
+          {
+            "name": "@sorun"
           }
         ]
       }
     ],
-    "name": "Default Login",
+    "name": "As a user, I should be able to use functions under Company menu",
     "description": "",
-    "id": "default-login",
+    "id": "as-a-user--i-should-be-able-to-use-functions-under-company-menu",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/DefaultLogin.feature",
+    "uri": "file:src/test/resources/features/Company.feature",
     "tags": [
       {
-        "name": "@wip",
+        "name": "@Company",
         "type": "Tag",
         "location": {
           "line": 1,
